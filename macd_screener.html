@@ -7,145 +7,62 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg:       #f4f2ee;
-    --bg2:      #ffffff;
-    --bg3:      #f9f8f6;
-    --border:   #e4e0d8;
-    --border2:  #d0ccc4;
-    --text:     #1a1814;
-    --muted:    #7a756c;
-    --dim:      #a09b92;
-    --bull:     #1a7a52;
-    --bull-bg:  #e8f5ee;
-    --bull-bdr: #a8d9bc;
-    --bear:     #b83220;
-    --bear-bg:  #fceae7;
-    --bear-bdr: #e8a89e;
-    --gold:     #9a6b00;
-    --gold-bg:  #fdf3dc;
-    --gold-bdr: #e8c97a;
-    --blue:     #1a4a8a;
-    --blue-bg:  #e8eef8;
-    --blue-bdr: #a8c0e4;
-    --neutral:  #5a5650;
-    --neut-bg:  #f0ede8;
-    --neut-bdr: #c8c4bc;
-    --accent:   #2d5fa6;
+    --bg:#f4f2ee;--bg2:#ffffff;--bg3:#f9f8f6;
+    --border:#e4e0d8;--border2:#d0ccc4;
+    --text:#1a1814;--muted:#7a756c;--dim:#a09b92;
+    --bull:#1a7a52;--bear:#b83220;--gold:#9a6b00;
+    --blue:#1a4a8a;--blue-bg:#e8eef8;--blue-bdr:#a8c0e4;
+    --neutral:#5a5650;--accent:#2d5fa6;
+    --unconf:#6b4fa0;--unconf-bg:#f0ebfa;--unconf-bdr:#c4aee8;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    min-height: 100vh;
-  }
-  header {
-    background: var(--bg2);
-    border-bottom: 1px solid var(--border);
-    padding: 28px 36px 22px;
-    display: flex;
-    align-items: flex-end;
-    gap: 24px;
-    flex-wrap: wrap;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-  }
-  .hdr-sub   { font-size: 10px; letter-spacing: 3px; color: var(--dim); text-transform: uppercase; margin-bottom: 5px; font-family: 'DM Mono', monospace; }
-  .hdr-title { font-size: 22px; font-weight: 600; color: var(--text); letter-spacing: -0.3px; }
-  .hdr-meta  { font-size: 11px; color: var(--dim); margin-top: 5px; font-family: 'DM Mono', monospace; }
-  .stats { margin-left: auto; display: flex; gap: 32px; }
-  .stat { text-align: center; }
-  .stat-n { font-size: 24px; font-weight: 600; }
-  .stat-l { font-size: 10px; letter-spacing: 2px; color: var(--dim); text-transform: uppercase; margin-top: 2px; font-family: 'DM Mono', monospace; }
-  .controls {
-    padding: 12px 36px;
-    background: var(--bg2);
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    gap: 6px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .pill {
-    padding: 5px 14px; border-radius: 20px;
-    border: 1px solid var(--border2);
-    background: transparent; color: var(--muted);
-    font-size: 11px; cursor: pointer; letter-spacing: 0.5px;
-    text-transform: uppercase; font-family: 'DM Mono', monospace;
-    transition: all 0.12s;
-  }
-  .pill:hover { border-color: var(--accent); color: var(--accent); background: var(--blue-bg); }
-  .pill.active { border-color: var(--accent); background: var(--accent); color: #fff; }
-  .sort-grp { display: flex; gap: 5px; margin-left: 14px; }
-  .sb {
-    padding: 5px 12px; border-radius: 6px;
-    border: 1px solid var(--border);
-    background: transparent; color: var(--dim);
-    font-size: 11px; cursor: pointer; font-family: 'DM Mono', monospace;
-    transition: all 0.12s;
-  }
-  .sb:hover { color: var(--text); border-color: var(--border2); }
-  .sb.active { border-color: var(--border2); background: var(--bg3); color: var(--text); font-weight: 500; }
-  .refresh-btn {
-    margin-left: auto; padding: 6px 16px; border-radius: 6px;
-    border: 1px solid var(--accent); background: var(--blue-bg);
-    color: var(--accent); font-size: 11px; cursor: pointer;
-    font-family: 'DM Mono', monospace; letter-spacing: 0.5px;
-    transition: all 0.12s;
-  }
-  .refresh-btn:hover { background: var(--accent); color: #fff; }
-  #status-bar {
-    padding: 7px 36px;
-    font-size: 11px;
-    background: var(--bg3);
-    color: var(--dim);
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-family: 'DM Mono', monospace;
-  }
-  .status-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
-  .table-wrap { padding: 20px 36px; overflow-x: auto; }
-  table { width: 100%; border-collapse: collapse; min-width: 780px; }
-  th {
-    font-size: 10px; letter-spacing: 1px; text-transform: uppercase;
-    color: var(--dim); font-weight: 500; padding: 8px 10px;
-    text-align: left; border-bottom: 2px solid var(--border);
-    background: var(--bg);
-    white-space: nowrap; cursor: pointer; user-select: none;
-    font-family: 'DM Mono', monospace;
-  }
-  th:hover { color: var(--text); }
-  td { padding: 10px 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }
-  tr:hover td { background: var(--bg3); }
-  .t-ticker { font-weight: 600; color: var(--accent); font-size: 12px; font-family: 'DM Mono', monospace; }
-  .t-name   { color: var(--muted); font-size: 12px; max-width: 160px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .t-right  { text-align: right; font-family: 'DM Mono', monospace; }
-  .badge {
-    display: inline-block; padding: 3px 10px; border-radius: 20px;
-    font-size: 10px; border: 1px solid;
-    white-space: nowrap; font-family: 'DM Mono', monospace; font-weight: 500;
-  }
-  .spark { display: flex; align-items: flex-end; gap: 1.5px; height: 26px; }
-  .spark-b { width: 3px; border-radius: 1px; }
-  .empty { text-align: center; color: var(--dim); padding: 48px; }
-  #setup {
-    display: none; margin: 24px 36px; padding: 20px 24px;
-    background: var(--blue-bg); border: 1px solid var(--blue-bdr);
-    border-radius: 8px; color: var(--blue); font-size: 12px;
-    line-height: 2; font-family: 'DM Mono', monospace;
-  }
-  #setup h3 { margin-bottom: 10px; font-size: 13px; }
-  code { background: #fff; padding: 1px 7px; border-radius: 4px; border: 1px solid var(--blue-bdr); color: var(--text); }
-  .legend {
-    margin: 0 36px 36px; padding: 16px 20px;
-    background: var(--bg2); border: 1px solid var(--border);
-    border-radius: 8px; font-size: 11px; color: var(--muted);
-    line-height: 1.9; font-family: 'DM Mono', monospace;
-  }
-  .legend-title { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--dim); margin-bottom: 10px; }
-  .legend-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2px 24px; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;min-height:100vh;}
+  header{background:var(--bg2);border-bottom:1px solid var(--border);padding:28px 36px 22px;display:flex;align-items:flex-end;gap:24px;flex-wrap:wrap;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+  .hdr-sub{font-size:10px;letter-spacing:3px;color:var(--dim);text-transform:uppercase;margin-bottom:5px;font-family:'DM Mono',monospace;}
+  .hdr-title{font-size:22px;font-weight:600;color:var(--text);}
+  .hdr-meta{font-size:11px;color:var(--dim);margin-top:5px;font-family:'DM Mono',monospace;}
+  .stats{margin-left:auto;display:flex;gap:28px;}
+  .stat{text-align:center;}
+  .stat-n{font-size:22px;font-weight:600;}
+  .stat-l{font-size:10px;letter-spacing:2px;color:var(--dim);text-transform:uppercase;margin-top:2px;font-family:'DM Mono',monospace;}
+  .controls{padding:12px 36px;background:var(--bg2);border-bottom:1px solid var(--border);display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+  .pill{padding:5px 14px;border-radius:20px;border:1px solid var(--border2);background:transparent;color:var(--muted);font-size:11px;cursor:pointer;letter-spacing:.5px;text-transform:uppercase;font-family:'DM Mono',monospace;transition:all .12s;}
+  .pill:hover{border-color:var(--accent);color:var(--accent);background:var(--blue-bg);}
+  .pill.active{border-color:var(--accent);background:var(--accent);color:#fff;}
+  .sort-grp{display:flex;gap:5px;margin-left:14px;}
+  .sb{padding:5px 12px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--dim);font-size:11px;cursor:pointer;font-family:'DM Mono',monospace;transition:all .12s;}
+  .sb:hover{color:var(--text);border-color:var(--border2);}
+  .sb.active{border-color:var(--border2);background:var(--bg3);color:var(--text);font-weight:500;}
+  .ft-ctrl{display:flex;align-items:center;gap:6px;margin-left:12px;font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);}
+  .ft-ctrl select{padding:4px 8px;border-radius:6px;border:1px solid var(--border2);background:var(--bg2);color:var(--text);font-family:'DM Mono',monospace;font-size:11px;cursor:pointer;}
+  .refresh-btn{margin-left:auto;padding:6px 16px;border-radius:6px;border:1px solid var(--accent);background:var(--blue-bg);color:var(--accent);font-size:11px;cursor:pointer;font-family:'DM Mono',monospace;transition:all .12s;}
+  .refresh-btn:hover{background:var(--accent);color:#fff;}
+  #status-bar{padding:7px 36px;font-size:11px;background:var(--bg3);color:var(--dim);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:center;font-family:'DM Mono',monospace;}
+  .status-dot{width:6px;height:6px;border-radius:50%;display:inline-block;flex-shrink:0;}
+  .table-wrap{padding:20px 36px;overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;min-width:840px;}
+  th{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);font-weight:500;padding:8px 10px;text-align:left;border-bottom:2px solid var(--border);background:var(--bg);white-space:nowrap;cursor:pointer;user-select:none;font-family:'DM Mono',monospace;}
+  th:hover{color:var(--text);}
+  th.sort-active{color:var(--accent);border-bottom-color:var(--accent);}
+  th.sort-active::after{content:' ↕';font-size:9px;opacity:0.7;}
+  td{padding:9px 10px;border-bottom:1px solid var(--border);vertical-align:middle;}
+  tr:hover td{background:var(--bg3);}
+  .t-ticker{font-weight:600;color:var(--accent);font-size:12px;font-family:'DM Mono',monospace;}
+  .t-name{color:var(--muted);font-size:12px;max-width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .t-right{text-align:right;font-family:'DM Mono',monospace;}
+  .badge{display:inline-block;padding:3px 9px;border-radius:20px;font-size:10px;border:1px solid;white-space:nowrap;font-family:'DM Mono',monospace;font-weight:500;}
+  .ft-badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:10px;font-family:'DM Mono',monospace;border:1px solid;white-space:nowrap;}
+  .ft-ok{background:#e8f5ee;border-color:#4aaa72;color:#1a5c3a;}
+  .ft-pending{background:var(--unconf-bg);border-color:var(--unconf-bdr);color:var(--unconf);}
+  .spark{display:flex;align-items:flex-end;gap:1.5px;height:24px;}
+  .spark-b{width:3px;border-radius:1px;}
+  .empty{text-align:center;color:var(--dim);padding:48px;}
+  #setup{display:none;margin:24px 36px;padding:20px 24px;background:var(--blue-bg);border:1px solid var(--blue-bdr);border-radius:8px;color:var(--blue);font-size:12px;line-height:2;font-family:'DM Mono',monospace;}
+  code{background:#fff;padding:1px 7px;border-radius:4px;border:1px solid var(--blue-bdr);color:var(--text);}
+  .legend{margin:0 36px 36px;padding:16px 20px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;font-size:11px;color:var(--muted);line-height:1.9;font-family:'DM Mono',monospace;}
+  .legend-title{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin-bottom:10px;}
+  .legend-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:2px 24px;}
+  .ft-note{margin-top:12px;padding-top:10px;border-top:1px solid var(--border);font-size:10px;color:var(--dim);line-height:1.8;}
 </style>
 </head>
 <body>
@@ -156,22 +73,30 @@
     <div class="hdr-meta" id="hdr-meta">EMA 12/26 · Signal 9 · wöchentlich</div>
   </div>
   <div class="stats">
-    <div class="stat"><div class="stat-n" id="s-bull" style="color:var(--bull)">—</div><div class="stat-l">Bullish</div></div>
-    <div class="stat"><div class="stat-n" id="s-bear" style="color:var(--bear)">—</div><div class="stat-l">Bearish</div></div>
-    <div class="stat"><div class="stat-n" id="s-cross" style="color:var(--gold)">—</div><div class="stat-l">Crossovers</div></div>
+    <div class="stat"><div class="stat-n" id="s-bull" style="color:var(--bull)">—</div><div class="stat-l">Bullish ✓</div></div>
+    <div class="stat"><div class="stat-n" id="s-bear" style="color:var(--bear)">—</div><div class="stat-l">Bearish ✓</div></div>
+    <div class="stat"><div class="stat-n" id="s-unconf" style="color:var(--unconf)">—</div><div class="stat-l">Unbestätigt</div></div>
     <div class="stat"><div class="stat-n" id="s-total" style="color:var(--neutral)">—</div><div class="stat-l">Total</div></div>
   </div>
 </header>
 <div class="controls">
   <button class="pill active" onclick="setFilter('All',this)">All</button>
+  <button class="pill" onclick="setFilter('Confirmed',this)">Bestätigt</button>
   <button class="pill" onclick="setFilter('Bullish',this)">Bullish</button>
   <button class="pill" onclick="setFilter('Bearish',this)">Bearish</button>
-  <button class="pill" onclick="setFilter('Crossover',this)">Crossover</button>
+  <button class="pill" onclick="setFilter('Unconfirmed',this)">⏳ Unbestätigt</button>
   <div class="sort-grp">
     <button class="sb active" onclick="setSort('score',this)">↕ Signal</button>
     <button class="sb" onclick="setSort('chg_pct',this)">↕ Woche %</button>
     <button class="sb" onclick="setSort('macd',this)">↕ MACD</button>
-    <button class="sb" onclick="setSort('histogram',this)">↕ Hist.</button>
+    <button class="sb" onclick="setSort('ft_weeks',this)">↕ FT-W</button>
+  </div>
+  <div class="ft-ctrl">
+    Follow-Through:
+    <select id="ft-select" onchange="render()">
+      <option value="2" selected>2 Wochen</option>
+      <option value="3">3 Wochen</option>
+    </select>
   </div>
   <button class="refresh-btn" onclick="loadData()">⟳ Aktualisieren</button>
 </div>
@@ -181,18 +106,20 @@
 </div>
 <div id="setup">
   <h3>Erste Schritte</h3>
-  <code>cd ~/Downloads && python3 macd_screener.py --json --out macd_data.json</code>
+  Standard: <code>python3 macd_screener.py --json --out macd_data.json</code><br>
+  3 Wochen FT: <code>python3 macd_screener.py --followthrough 3 --json --out macd_data.json</code>
 </div>
 <div class="table-wrap">
   <table>
     <thead><tr>
       <th onclick="setSort('ticker',this)">Ticker</th>
-      <th>Name</th>
+      <th onclick="setSort('name',this)">Name</th>
       <th class="t-right" onclick="setSort('price',this)">Preis</th>
       <th class="t-right" onclick="setSort('chg_pct',this)">Woche %</th>
       <th class="t-right" onclick="setSort('macd',this)">MACD</th>
       <th class="t-right" onclick="setSort('histogram',this)">Hist.</th>
       <th>20W</th>
+      <th onclick="setSort('ft_weeks',this)">FT</th>
       <th onclick="setSort('score',this)">Signal</th>
     </tr></thead>
     <tbody id="tbody"></tbody>
@@ -202,14 +129,21 @@
 <div class="legend">
   <div class="legend-title">Signal-Logik (Weekly MACD 12/26/9)</div>
   <div class="legend-grid">
-    <div><span style="color:var(--bull);font-weight:600">Strong Bullish Crossover</span> — MACD kreuzt Signal ↑ und MACD &gt; 0</div>
-    <div><span style="color:var(--bull)">Bullish Crossover</span> — MACD kreuzt Signal ↑ (noch unter Nulllinie)</div>
+    <div><span style="color:var(--bull);font-weight:600">Strong Bullish Crossover</span> — MACD über Signal ≥ NW, MACD &gt; 0</div>
+    <div><span style="color:var(--bull)">Bullish Crossover</span> — MACD über Signal ≥ NW, noch unter Nulllinie</div>
     <div><span style="color:var(--bull)">Bullish Momentum</span> — MACD &gt; Signal &gt; 0, Histogramm steigt</div>
     <div><span style="color:var(--neutral)">Bullish (Fading)</span> — MACD &gt; 0, Histogramm schrumpft</div>
-    <div><span style="color:var(--gold)">Bearish (Fading)</span> — MACD &lt; 0, Histogramm steigt</div>
+    <div><span style="color:var(--unconf)">⏳ Unconfirmed Bullish</span> — Crossover noch nicht bestätigt</div>
+    <div><span style="color:var(--unconf)">⏳ Unconfirmed Bearish</span> — Crossover noch nicht bestätigt</div>
+    <div><span style="color:var(--gold)">Bearish (Fading)</span> — MACD &lt; 0, Histogramm steigt leicht</div>
     <div><span style="color:var(--bear)">Bearish Momentum</span> — MACD &lt; Signal &lt; 0, Histogramm fällt</div>
-    <div><span style="color:var(--bear)">Bearish Crossover</span> — MACD kreuzt Signal ↓ (noch über Nulllinie)</div>
-    <div><span style="color:var(--bear);font-weight:600">Strong Bearish Crossover</span> — MACD kreuzt Signal ↓ und MACD &lt; 0</div>
+    <div><span style="color:var(--bear)">Bearish Crossover</span> — MACD unter Signal ≥ NW, noch über 0</div>
+    <div><span style="color:var(--bear);font-weight:600">Strong Bearish Crossover</span> — MACD unter Signal ≥ NW, MACD &lt; 0</div>
+  </div>
+  <div class="ft-note">
+    <strong>Follow-Through (FT)</strong> — Crossover gilt erst als bestätigt wenn MACD N Wochen konsistent
+    auf der richtigen Seite der Signallinie bleibt. ✓ = bestätigt · ⏳ = noch nicht bestätigt.
+    Einstellbar oben rechts (2 oder 3 Wochen).
   </div>
 </div>
 <script>
@@ -218,11 +152,14 @@ const BADGE={
   "Bullish Crossover":{bg:"#e8f5ee",border:"#4aaa72",text:"#1a5c3a"},
   "Bullish Momentum":{bg:"#edf7f2",border:"#6abf8a",text:"#1a5c3a"},
   "Bullish (Fading)":{bg:"#f0ede8",border:"#b0aa9e",text:"#4a4640"},
+  "Unconfirmed Bullish":{bg:"#f0ebfa",border:"#c4aee8",text:"#6b4fa0"},
+  "Unconfirmed Bearish":{bg:"#f0ebfa",border:"#c4aee8",text:"#6b4fa0"},
   "Bearish (Fading)":{bg:"#fdf3dc",border:"#d4a832",text:"#6a4400"},
   "Bearish Momentum":{bg:"#fceae7",border:"#d4604a",text:"#7a1a0a"},
   "Bearish Crossover":{bg:"#fce4e0",border:"#c04030",text:"#6a1a0a"},
   "Strong Bearish Crossover":{bg:"#f8d8d4",border:"#a02010",text:"#5a0a00"},
 };
+function getBadge(m){for(const[k,v] of Object.entries(BADGE)){if(m.includes(k))return v;}return BADGE["Bullish (Fading)"];}
 let ALL=[],flt="All",srt="score",dir=-1;
 function setStatus(ok,msg){
   document.getElementById('status-dot').style.background=ok===true?'#1a7a52':ok===false?'#b83220':'#a09b92';
@@ -235,8 +172,10 @@ async function loadData(){
     if(!r.ok)throw new Error();
     ALL=await r.json();
     const ts=ALL[0]?.fetched_at?new Date(ALL[0].fetched_at).toLocaleString('de-CH'):'—';
-    setStatus(true,`${ALL.length} Titel · Stand: ${ts} · EMA 12/26/9 · wöchentlich`);
-    document.getElementById('hdr-meta').textContent=`EMA 12/26 · Signal 9 · wöchentlich · ${ts}`;
+    const ft=ALL[0]?.ft_required||2;
+    setStatus(true,`${ALL.length} Titel · Stand: ${ts} · Follow-Through: ${ft}W`);
+    document.getElementById('hdr-meta').textContent=`EMA 12/26 · Signal 9 · wöchentlich · FT: ${ft}W · ${ts}`;
+    document.getElementById('ft-select').value=String(ft);
     document.getElementById('setup').style.display='none';
     render();
   }catch(e){
@@ -245,12 +184,18 @@ async function loadData(){
   }
 }
 function setFilter(f,el){flt=f;document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));el.classList.add('active');render();}
-function setSort(s,el){if(srt===s)dir*=-1;else{srt=s;dir=-1;}document.querySelectorAll('.sb').forEach(b=>b.classList.remove('active'));if(el)el.classList.add('active');render();}
+function setSort(s,el){
+  if(srt===s)dir*=-1;else{srt=s;dir=-1;}
+  document.querySelectorAll('.sb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('th').forEach(t=>t.classList.remove('sort-active'));
+  if(el){el.classList.contains('sb')?el.classList.add('active'):el.classList.add('sort-active');}
+  render();
+}
 function spark(h){
   if(!h?.length)return'';
   const mx=Math.max(...h.map(Math.abs),0.001);
   return h.map((v,i)=>{
-    const ht=Math.max(1,Math.round((Math.abs(v)/mx)*24));
+    const ht=Math.max(1,Math.round((Math.abs(v)/mx)*22));
     const col=v>=0?'#1a7a52':'#b83220';
     const op=(0.3+0.7*(i/h.length)).toFixed(2);
     return`<div class="spark-b" style="height:${ht}px;background:${col};opacity:${op}"></div>`;
@@ -258,27 +203,33 @@ function spark(h){
 }
 function fmt(v,d=2){if(v==null)return'—';return(v>=0?'+':'')+v.toFixed(d);}
 function render(){
+  const ftReq=parseInt(document.getElementById('ft-select').value)||2;
   let data=[...ALL];
-  if(flt==='Bullish')data=data.filter(r=>r.momentum.includes('Bullish'));
-  if(flt==='Bearish')data=data.filter(r=>r.momentum.includes('Bearish'));
-  if(flt==='Crossover')data=data.filter(r=>r.momentum.includes('Crossover'));
+  if(flt==='Bullish')    data=data.filter(r=>r.momentum.includes('Bullish')&&!r.momentum.includes('Unconfirmed'));
+  if(flt==='Bearish')    data=data.filter(r=>r.momentum.includes('Bearish')&&!r.momentum.includes('Unconfirmed'));
+  if(flt==='Confirmed')  data=data.filter(r=>r.ft_weeks>=(r.ft_required||ftReq));
+  if(flt==='Unconfirmed')data=data.filter(r=>r.momentum.includes('Unconfirmed'));
   data.sort((a,b)=>{
     let av=a[srt]??0,bv=b[srt]??0;
     if(typeof av==='string')return dir*av.localeCompare(bv);
     return dir*(bv-av);
   });
-  document.getElementById('s-bull').textContent=ALL.filter(r=>r.momentum.includes('Bullish')).length;
-  document.getElementById('s-bear').textContent=ALL.filter(r=>r.momentum.includes('Bearish')).length;
-  document.getElementById('s-cross').textContent=ALL.filter(r=>r.momentum.includes('Crossover')).length;
-  document.getElementById('s-total').textContent=ALL.length;
+  document.getElementById('s-bull').textContent  =ALL.filter(r=>r.momentum.includes('Bullish')&&!r.momentum.includes('Unconfirmed')).length;
+  document.getElementById('s-bear').textContent  =ALL.filter(r=>r.momentum.includes('Bearish')&&!r.momentum.includes('Unconfirmed')).length;
+  document.getElementById('s-unconf').textContent=ALL.filter(r=>r.momentum.includes('Unconfirmed')).length;
+  document.getElementById('s-total').textContent =ALL.length;
   const empty=document.getElementById('empty');
   if(!data.length){empty.style.display='block';document.getElementById('tbody').innerHTML='';return;}
   empty.style.display='none';
   document.getElementById('tbody').innerHTML=data.map(r=>{
-    const bs=BADGE[r.momentum]||BADGE['Bullish (Fading)'];
+    const bs=getBadge(r.momentum);
     const cc=r.chg_pct>=0?'var(--bull)':'var(--bear)';
     const mc=r.macd>=0?'var(--bull)':'var(--bear)';
     const hc=r.histogram>=0?'#2a8a5a':'#c04030';
+    const ftOk=r.ft_weeks>=(r.ft_required||ftReq);
+    const ftBadge=ftOk
+      ?`<span class="ft-badge ft-ok">✓ ${r.ft_weeks}W</span>`
+      :`<span class="ft-badge ft-pending">⏳ ${r.ft_weeks}/${r.ft_required||ftReq}W</span>`;
     return`<tr>
       <td><span class="t-ticker">${r.ticker}</span></td>
       <td><span class="t-name" title="${r.name}">${r.name}</span></td>
@@ -287,6 +238,7 @@ function render(){
       <td class="t-right" style="color:${mc}">${fmt(r.macd,2)}</td>
       <td class="t-right" style="color:${hc}">${fmt(r.histogram,3)}</td>
       <td><div class="spark">${spark(r.hist_series)}</div></td>
+      <td>${ftBadge}</td>
       <td><span class="badge" style="background:${bs.bg};border-color:${bs.border};color:${bs.text}">${r.momentum}</span></td>
     </tr>`;
   }).join('');
