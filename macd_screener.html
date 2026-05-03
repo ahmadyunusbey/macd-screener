@@ -53,6 +53,7 @@
   .badge{display:inline-block;padding:3px 9px;border-radius:20px;font-size:10px;border:1px solid;white-space:nowrap;font-family:'DM Mono',monospace;font-weight:500;}
   .ft-badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:10px;font-family:'DM Mono',monospace;border:1px solid;white-space:nowrap;}
   .ft-ok{background:#e8f5ee;border-color:#4aaa72;color:#1a5c3a;}
+  .ft-hh{background:#d0eed9;border-color:#1a7a52;color:#0a3a20;font-weight:700;}
   .ft-pending{background:var(--unconf-bg);border-color:var(--unconf-bdr);color:var(--unconf);}
   .spark{display:flex;align-items:flex-end;gap:1.5px;height:24px;}
   .spark-b{width:3px;border-radius:1px;}
@@ -81,6 +82,7 @@
 </header>
 <div class="controls">
   <button class="pill active" onclick="setFilter('All',this)">All</button>
+  <button class="pill" onclick="setFilter('HH',this)">✓✓ Higher Highs</button>
   <button class="pill" onclick="setFilter('Confirmed',this)">Bestätigt</button>
   <button class="pill" onclick="setFilter('Bullish',this)">Bullish</button>
   <button class="pill" onclick="setFilter('Bearish',this)">Bearish</button>
@@ -129,25 +131,26 @@
 <div class="legend">
   <div class="legend-title">Signal-Logik (Weekly MACD 12/26/9)</div>
   <div class="legend-grid">
-    <div><span style="color:var(--bull);font-weight:600">Strong Bullish Crossover</span> — MACD über Signal ≥ NW, MACD &gt; 0</div>
-    <div><span style="color:var(--bull)">Bullish Crossover</span> — MACD über Signal ≥ NW, noch unter Nulllinie</div>
+    <div><span style="color:var(--bull);font-weight:700">🚀🚀 Strong Bullish Crossover ↑↑</span> — FT ✓ + jeder Balken höher, MACD &gt; 0</div>
+    <div><span style="color:var(--bull);font-weight:700">📈📈 Bullish Crossover ↑↑</span> — FT ✓ + jeder Balken höher, noch unter 0</div>
+    <div><span style="color:var(--bull)">🚀 Strong Bullish Crossover</span> — MACD über Signal ≥ NW, MACD &gt; 0</div>
+    <div><span style="color:var(--bull)">📈 Bullish Crossover</span> — MACD über Signal ≥ NW, noch unter Nulllinie</div>
     <div><span style="color:var(--bull)">Bullish Momentum</span> — MACD &gt; Signal &gt; 0, Histogramm steigt</div>
     <div><span style="color:var(--neutral)">Bullish (Fading)</span> — MACD &gt; 0, Histogramm schrumpft</div>
-    <div><span style="color:var(--unconf)">⏳ Unconfirmed Bullish</span> — Crossover noch nicht bestätigt</div>
-    <div><span style="color:var(--unconf)">⏳ Unconfirmed Bearish</span> — Crossover noch nicht bestätigt</div>
+    <div><span style="color:var(--unconf)">⏳ Unconfirmed Bullish/Bearish</span> — Crossover noch nicht bestätigt</div>
     <div><span style="color:var(--gold)">Bearish (Fading)</span> — MACD &lt; 0, Histogramm steigt leicht</div>
     <div><span style="color:var(--bear)">Bearish Momentum</span> — MACD &lt; Signal &lt; 0, Histogramm fällt</div>
-    <div><span style="color:var(--bear)">Bearish Crossover</span> — MACD unter Signal ≥ NW, noch über 0</div>
-    <div><span style="color:var(--bear);font-weight:600">Strong Bearish Crossover</span> — MACD unter Signal ≥ NW, MACD &lt; 0</div>
+    <div><span style="color:var(--bear);font-weight:700">🔻🔻 Strong Bearish Crossover ↓↓</span> — FT ✓ + jeder Balken tiefer, MACD &lt; 0</div>
   </div>
   <div class="ft-note">
-    <strong>Follow-Through (FT)</strong> — Crossover gilt erst als bestätigt wenn MACD N Wochen konsistent
-    auf der richtigen Seite der Signallinie bleibt. ✓ = bestätigt · ⏳ = noch nicht bestätigt.
-    Einstellbar oben rechts (2 oder 3 Wochen).
+    <strong>Follow-Through (FT)</strong> — Crossover gilt erst als bestätigt wenn MACD N Wochen konsistent auf der richtigen Seite bleibt. ✓ = bestätigt · ⏳ = noch nicht bestätigt.<br>
+    <strong>Higher Highs (↑↑)</strong> — Zusatzfilter: Jeder Histogramm-Balken muss höher (bullish) bzw. tiefer (bearish) sein als der vorherige. ✓✓ = stärkstes Signal, weniger Treffer, höhere Qualität.
   </div>
 </div>
 <script>
 const BADGE={
+  "Strong Bullish Crossover ↑↑":{bg:"#b8eacc",border:"#0d6e3f",text:"#062a18"},
+  "Bullish Crossover ↑↑":{bg:"#c8f0d8",border:"#1a7a52",text:"#0a3a20"},
   "Strong Bullish Crossover":{bg:"#d0eed9",border:"#1a7a52",text:"#0d4a2e"},
   "Bullish Crossover":{bg:"#e8f5ee",border:"#4aaa72",text:"#1a5c3a"},
   "Bullish Momentum":{bg:"#edf7f2",border:"#6abf8a",text:"#1a5c3a"},
@@ -156,6 +159,8 @@ const BADGE={
   "Unconfirmed Bearish":{bg:"#f0ebfa",border:"#c4aee8",text:"#6b4fa0"},
   "Bearish (Fading)":{bg:"#fdf3dc",border:"#d4a832",text:"#6a4400"},
   "Bearish Momentum":{bg:"#fceae7",border:"#d4604a",text:"#7a1a0a"},
+  "Bearish Crossover ↓↓":{bg:"#f8c8c4",border:"#8a1000",text:"#4a0800"},
+  "Strong Bearish Crossover ↓↓":{bg:"#f4b8b4",border:"#6a0800",text:"#3a0400"},
   "Bearish Crossover":{bg:"#fce4e0",border:"#c04030",text:"#6a1a0a"},
   "Strong Bearish Crossover":{bg:"#f8d8d4",border:"#a02010",text:"#5a0a00"},
 };
@@ -205,6 +210,7 @@ function fmt(v,d=2){if(v==null)return'—';return(v>=0?'+':'')+v.toFixed(d);}
 function render(){
   const ftReq=parseInt(document.getElementById('ft-select').value)||2;
   let data=[...ALL];
+  if(flt==='HH')         data=data.filter(r=>r.hh_confirmed);
   if(flt==='Bullish')    data=data.filter(r=>r.momentum.includes('Bullish')&&!r.momentum.includes('Unconfirmed'));
   if(flt==='Bearish')    data=data.filter(r=>r.momentum.includes('Bearish')&&!r.momentum.includes('Unconfirmed'));
   if(flt==='Confirmed')  data=data.filter(r=>r.ft_weeks>=(r.ft_required||ftReq));
@@ -226,10 +232,15 @@ function render(){
     const cc=r.chg_pct>=0?'var(--bull)':'var(--bear)';
     const mc=r.macd>=0?'var(--bull)':'var(--bear)';
     const hc=r.histogram>=0?'#2a8a5a':'#c04030';
-    const ftOk=r.ft_weeks>=(r.ft_required||ftReq);
-    const ftBadge=ftOk
-      ?`<span class="ft-badge ft-ok">✓ ${r.ft_weeks}W</span>`
-      :`<span class="ft-badge ft-pending">⏳ ${r.ft_weeks}/${r.ft_required||ftReq}W</span>`;
+    const ftReqLocal=r.ft_required||ftReq;
+    let ftBadge;
+    if(r.hh_confirmed){
+      ftBadge=`<span class="ft-badge ft-hh">✓✓ ${r.hh_weeks}W ↑↑</span>`;
+    } else if(r.ft_weeks>=ftReqLocal){
+      ftBadge=`<span class="ft-badge ft-ok">✓ ${r.ft_weeks}W</span>`;
+    } else {
+      ftBadge=`<span class="ft-badge ft-pending">⏳ ${r.ft_weeks}/${ftReqLocal}W</span>`;
+    }
     return`<tr>
       <td><span class="t-ticker">${r.ticker}</span></td>
       <td><span class="t-name" title="${r.name}">${r.name}</span></td>
