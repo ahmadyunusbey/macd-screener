@@ -1,14 +1,19 @@
 """
-Weekly MACD Momentum Screener
-==============================
+Weekly MACD Momentum Screener (mit Follow-Through Filter)
+==========================================================
 Zieht wöchentliche Schlusskurse via yfinance, berechnet MACD (12/26/9)
 und klassifiziert das Momentum-Signal für jede Position.
 
+Follow-Through Logik:
+  Ein Crossover gilt erst als bestätigt wenn MACD mindestens N Wochen
+  konsistent auf der richtigen Seite der Signallinie bleibt.
+
 Usage:
-    python macd_screener.py                    # Default-Watchlist
-    python macd_screener.py --tickers X Y Z    # Eigene Tickers
-    python macd_screener.py --json             # JSON-Output für Web-App
-    python macd_screener.py --weeks 78         # Mehr Wochen (mehr EMA-History)
+    python macd_screener.py                      # Default-Watchlist
+    python macd_screener.py --tickers X Y Z      # Eigene Tickers
+    python macd_screener.py --json               # JSON-Output für Web-App
+    python macd_screener.py --followthrough 3    # 3 Wochen Follow-Through
+    python macd_screener.py --weeks 156          # Mehr History
 """
 
 import argparse
@@ -28,60 +33,238 @@ except ImportError:
 
 DEFAULT_TICKERS = {
     # Ebene 1 – Core / Income
-    "AV.L":      "AVIVA",
-    "BATS.L":    "BRITISH AMERICAN TOBACCO",
-    "HSBA.L":    "HSBC HOLDINGS",
-    "HSBK.IL":   "HALYQ BANK",
-    "INDT.ST":   "INDUTRADE",
-    "INPP.L":    "INTERNATIONAL PUBLIC",
-    "ITH.L":     "ITHACA",
-    "KAP.IL":    "KAZATOM",
-    "LGEN.L":    "LEGAL & GENERAL",
-    "MNG.L":     "M&G",
-    "PHNX.L":    "PHOENIX",
-    "PBR-A":     "PETROBRAS",
-    "RIO.L":     "RIO TINTO",
-    "RWS.L":     "RWS",
-    "SQZ.L":     "SERICA",
-    "TRIG.L":    "THE RENEWABLE",
-    "ZIG.L":     "ZIGUP",
+    "ASHM.L":       "ASHMORE GROUP",
+    "AV.L":         "AVIVA",
+    "BATS.L":       "BRITISH AMERICAN TOBACCO",
+    "DNLM.L":       "DUNELM GROUP",
+    "ENOG.L":       "ENERGEAN",
+    "FLNG":         "FLEX LNG",
+    "GCP.L":        "GCP INFRASTRUCTRE",
+    "HSBA.L":       "HSBC HOLDINGS",
+    "HSBK.IL":      "HALYQ BANK",
+    "INPP.L":       "INTERNATIONAL PUBLIC",
+    "ITH.L":        "ITHACA",
+    "KAP.IL":       "KAZATOM",
+    "LAND.L":       "LAND SECURITIES",
+    "LGEN.L":       "LEGAL & GENERAL",
+    "MNG.L":        "M&G",
+    "MONY.L":       "MONEY GROUP",
+    "NESN.SW":      "NESTLE",
+    "OSB.L":        "OSB GROUP",
+    "PBR-A":        "PETROBRAS",
+    "RIO.L":        "RIO TINTO",
+    "RWS.L":        "RWS",
+    "SDLF.L":       "STANDARD LIFE",
+    "SQZ.L":        "SERICA",
+    "SREN.SW":      "SWISS RE",
+    "TRIG.L":       "THE RENEWABLE",
+    "UKW.L":        "GREENCOAT UK",
+    "VCT.L":        "VICTREX",
+    "VOD.L":        "VODAFONE",
+    "ZIG.L":        "ZIGUP",
     # Ebene 2 – Royalties Watchlist
-    "FNV":       "FRANCO-NEVADA",
-    "RGLD":      "ROYAL GOLD",
-    "WPM":       "WHEATON PRECIOUS",
+    "FNV":          "FRANCO-NEVADA",
+    "OR":           "OR ROYALTIES",
+    "RGLD":         "ROYAL GOLD",
+    "TFPM":         "TRIPLE FLAG PM",
+    "WPM":          "WHEATON PRECIOUS",
     # Ebene 3 – SE/CH Compounders
-    "ADDT-B.ST": "ADDTECH",
-    "BAKKA.OL":  "BAKKAFROST",
-    "BEAN.SW":   "BELIMO",
-    "BON":       "BONHEUR",
-    "CEVI.ST":   "CELLAVISION",
-    "DG.PA":     "VINCI",
-    "DSV.CO":    "DSV A/S",
-    "ESSITY-B.ST": "ESSITY",
-    "FER":       "FERROVIAL",
-    "LAGR-B.ST": "LAGERCRANTZ",
-    "LIFCO-B.ST":"LIFCO",
-    "MYCR.ST":   "MYCRONIC",
+    "ATCO-A.ST":    "ATLAS COPCO",
+    "ADDT-B.ST":    "ADDTECH",
+    "BAKKA.OL":     "BAKKAFROST",
+    "BAYN.DE":      "BAYER AG",
+    "BEAN.SW":      "BELIMO",
+    "BON":          "BONHEUR",
+    "CEVI.ST":      "CELLAVISION",
+    "DG.PA":        "VINCI",
+    "DSV.CO":       "DSV A/S",
+    "ESSITY-B.ST":  "ESSITY",
+    "FER":          "FERROVIAL",
+    "HLMA.L":       "HALMA",
+    "HOLN.SW":      "HOLCIM",
+    "INDT.ST":      "INDUTRADE",
+    "LAGR-B.ST":    "LAGERCRANTZ",
+    "LIFCO-B.ST":   "LIFCO",
+    "MYCR.ST":      "MYCRONIC",
     "NDINSCKL1.CO": "NORDIC SM CAPS",
-    "NVO":       "NOVO NORDISC",
-    "SIKA.SW":   "SIKA",
-    "VIT-B.ST":  "VITEC SOFTWARE",
-    "VACN.SW":   "VAT GROUP",
-    "YAR.OL":    "YARA",
+    "NVO":          "NOVO NORDISC",
+    "SAND.ST":      "SANDVIK",
+    "SIKA.SW":      "SIKA",
+    "SKA-B.ST":     "SKANSKA",
+    "TOM.OL":       "TOMRA",
+    "VIT-B.ST":     "VITEC SOFTWARE",
+    "VACN.SW":      "VAT GROUP",
+    "VITR.ST":      "VITROLIFE",
+    "YAR.OL":       "YARA",
     # Ebene 4 – Thematic ETFs
-    "VEGI":      "iShares MSCI Agri ETF",
-    "VIOG":      "Vanguard S&P SmallCap 600 Growth",
-    "XBI":       "SPDR S&P Biotech ETF",
+    "VEGI":         "iShares MSCI Agri ETF",
+    "VIOG":         "Vanguard S&P SmallCap 600 Growth",
+    "XBI":          "SPDR S&P Biotech ETF",
+    "FTEC":         "FIDELITY INFORMATION TECHNOLOGY",
+    "UKRN.D":       "UKRAINE RECONSTRUCTION",
     # Ebene 5 – Speculation
-    "ARQQ":      "ARQIT",
-    "BLDP":      "BALLARD POWER",
-    "DOKA.SW":   "DORMAKABA",
-    "FXPO.L":    "FERREXPO",
-    "KSPI":      "KASPI",
-    "NEL.OL":    "NEL ASA",
-    "RBREW.CO":  "ROYAL UNIBREW",
-    "SANN.SW":   "SANTHERA",
-    "WIE.VI":    "WIENERBERGER",
+    "9618.HK":      "JD.COM",
+    "ARQQ":         "ARQIT",
+    "BLDP":         "BALLARD POWER",
+    "DGE.L":        "DIAGEO",
+    "DOKA.SW":      "DORMAKABA",
+    "FXPO.L":       "FERREXPO",
+    "ITM.L":        "ITM POWER",
+    "KSPI":         "KASPI",
+    "NEL.OL":       "NEL ASA",
+    "NU":           "NU HOLDING",
+    "RBREW.CO":     "ROYAL UNIBREW",
+    "RBI.VI":       "RAIFFEISEN",
+    "RI.PA":        "PERNOD RICARD",
+    "SANN.SW":      "SANTHERA",
+    "TRN.MI":       "TERNA",
+    "WIE.VI":       "WIENERBERGER",
+    # Makro – Rohstoffe & FX
+    "GC=F":         "GOLD",
+    "SI=F":         "SILBER",
+    "CL=F":         "ÖL (WTI)",
+    "BZ=F":         "ÖL (BRENT)",
+    "NG=F":         "NATURAL GAS",
+    "EURUSD=X":     "EUR/USD",
+    "GBPUSD=X":     "GBP/USD",
+    "JPY=X":        "USD/JPY",
+    "CHF=X":        "USD/CHF",
+    # Ukraine-Aufbau
+    "ENR.DE":       "SIEMENS ENERGY",
+    "BA.L":         "BAE SYSTEMS",
+    "CAT":          "CATERPILLAR",
+    "JCI":          "JOHNSON CONTROLS",
+    "ABBN.SW":      "ABB",
+    "ETN":          "EATON",
+    "CRH.L":        "CRH",
+    "SU.PA":        "SCHNEIDER ELECTRIC",
+    "EMR":          "EMERSON ELECTRIC",
+    "RHM.DE":       "RHEINMETALL",
+    "FLR":          "FLUOR",
+    "PWR":          "QUANTA SERVICES",
+    "J":            "JACOBS SOLUTIONS",
+    "ACM":          "AECOM",
+    "KBR":          "KBR",
+    "WOR.AX":       "WORLEY",
+    "TE.PA":        "TECHNIP ENERGIES",
+    "SPM.MI":       "SAIPEM",
+    "ANA.MC":       "ACCIONA",
+    "EN.PA":        "BOUYGUES",
+    "HOT.DE":       "HOCHTIEF",
+    "STR.VI":       "STRABAG",
+    "NEE":          "NEXTERA ENERGY",
+    "ENGI.PA":      "ENGIE",
+    "RWE.DE":       "RWE",
+    "EOAN.DE":      "E.ON",
+    "IBE.MC":       "IBERDROLA",
+    "ORSTED.CO":    "ØRSTED",
+    "HEI.DE":       "HEIDELBERG MATERIALS",
+    "SGO.PA":       "SAINT-GOBAIN",
+    "VMC":          "VULCAN MATERIALS",
+    "MLM":          "MARTIN MARIETTA",
+    "DE":           "DEERE & COMPANY",
+    "6301.T":       "KOMATSU",
+    "METSO.HE":     "METSO",
+    "WEIR.L":       "WEIR GROUP",
+    "LMT":          "LOCKHEED MARTIN",
+    "NOC":          "NORTHROP GRUMMAN",
+    "GD":           "GENERAL DYNAMICS",
+    "HO.PA":        "THALES",
+    "LDO.MI":       "LEONARDO",
+    "HON":          "HONEYWELL",
+    "PH":           "PARKER-HANNIFIN",
+    "ITW":          "ILLINOIS TOOL WORKS",
+    # SKAGEN VEKST
+# Health Care
+"NOVO-B.CO":  "NOVO NORDISK",
+"HLUN-B.CO":   "H. LUNDBECK",
+# Industrials
+"ISS.CO":     "ISS A/S",
+"SKF-B.ST":   "SKF B",
+"VOLV-B.ST":  "VOLVO B",
+"0001.HK":    "CK HUTCHISON",
+"CDLR":       "CADELER",
+"BRAV.ST":    "BRAVIDA",
+"EZJ.L":      "EASYJET",
+"VWS.CO":     "VESTAS WIND",
+"TASK":       "TASKUS",
+# Financials
+"2318.HK":    "PING AN INSURANCE",
+"086790.KS":  "HANA FINANCIAL",
+"NDA-FI.HE":  "NORDEA BANK",
+"105560.KS":  "KB FINANCIAL",
+"ENX.PA":     "EURONEXT",
+"C":          "CITIGROUP",
+"LSEG.L":     "LONDON STOCK EXCHANGE",
+"003690.KS":  "KOREAN REINSURANCE",
+"B3SA3.SA":   "B3 BRASIL",
+"AIG":        "AIG",
+"KINV-B.ST":  "KINNEVIK B",
+# Materials
+"UPM.HE":     "UPM-KYMMENE",
+"WIE.VI":     "WIENERBERGER",
+"BOL.ST":     "BOLIDEN",
+"ELO.OL":     "ELOPAK",
+"ELK.OL":     "ELKEM",
+"SGZH.ME":    "SEGEZHA",  
+# Consumer Staples
+"CARL-B.CO":  "CARLSBERG B",
+"NOMD":       "NOMAD FOODS",
+"TAP":        "MOLSON COORS",
+"TSN":        "TYSON FOODS",
+"WALMEX.MX":  "WAL-MART MEXICO",
+# Information Technology
+"005930.KS":  "SAMSUNG ELECTRONICS",
+"NOKIA.HE":   "NOKIA",
+"TIETO.HE":   "TIETOEVRY",
+# Real Estate
+"1113.HK":    "CK ASSET HOLDINGS",
+"PUBLI.OL":   "PUBLIC PROPERTY INVEST",
+"BALD-B.ST":"FASTIGHETS BALDER",
+"SVEAF.ST":   "SVEAFASTIGHETER",
+# Communication Services
+"TEL.OL":     "TELENOR",
+"GOOGL":      "ALPHABET",
+# Energy
+"HYDR":       "HYDROGEN ETF",
+"SHELL.AS":   "SHELL",
+"TGS.OL":     "TGS GEOPHYSICAL",
+"PLSV.OL":    "PARATUS ENERGY",
+# Halbleiter
+"ALAB":	"Astera Labs",
+"AMAT":	"Applied Materials",
+"AMD":	"AMD",
+"ADI":	"Analog Devices",
+"ARM":	"Arm Holdings",
+"ASML":	"ASML",
+"AVGO":	"Broadcom",
+"AIXA.DE": "Aixtron",
+"CRDO":	"Credo Technology",
+"GFS":	"GLOBALFOUNDRIES",
+"IFX.DE":   "Infineon",
+"INTC":	"Intel",
+"KLAC":	"KLA",
+"LRCX":	"Lam Research",
+"MCHP":	"Microchip Technology",
+"MPWR":	"Monolithic Power",
+"MRVL":	"Marvell",
+"MU":	"Micron",
+"NVDA":	"NVIDIA",
+"NXPI":	"NXP",
+"0700.HK":  "MediaTek",
+"6963.T":   "KIOXIA",
+"ON":	"ON Semiconductor",
+"QCOM":	"QUALCOMM",
+"SLN.DE": "Siltronic",
+"SNDK":	"SanDisk",
+"STM":	"STMicroelectronics",
+"STX":	"Seagate",
+"SWKS":	"Skyworks",
+"TSM":	"TSMC",
+"TXN":	"Texas Instruments",
+"005930.KS": "Samsung Electronics",
+"000660.KS": "SK Hynix",
+"WDC":	"Western Digital",
 }
 
 
@@ -92,69 +275,157 @@ def ema(series: pd.Series, period: int) -> pd.Series:
 
 
 def calc_macd(closes: pd.Series, fast=12, slow=26, signal=9):
-    macd_line = ema(closes, fast) - ema(closes, slow)
+    macd_line   = ema(closes, fast) - ema(closes, slow)
     signal_line = ema(macd_line, signal)
-    histogram = macd_line - signal_line
+    histogram   = macd_line - signal_line
     return macd_line, signal_line, histogram
 
 
-def classify_momentum(macd_line: pd.Series, signal_line: pd.Series, histogram: pd.Series) -> str:
-    if len(macd_line) < 2:
-        return "Insufficient data"
+# ─── Follow-Through Klassifikation ───────────────────────────────────────────
 
-    m_last, m_prev = macd_line.iloc[-1], macd_line.iloc[-2]
-    s_last, s_prev = signal_line.iloc[-1], signal_line.iloc[-2]
-    h_last, h_prev = histogram.iloc[-1], histogram.iloc[-2]
+def classify_momentum(
+    macd_line:   pd.Series,
+    signal_line: pd.Series,
+    histogram:   pd.Series,
+    followthrough: int = 2,
+) -> dict:
+    n = len(macd_line)
+    if n < followthrough + 2:
+        return {"momentum": "Insufficient data", "confirmed": False, "ft_weeks": 0, "above_zero": False}
 
-    crossed_up   = m_prev < s_prev and m_last > s_last
-    crossed_down = m_prev > s_prev and m_last < s_last
-    hist_rising  = h_last > h_prev
-    above_zero   = m_last > 0
+    m_last = macd_line.iloc[-1]
+    s_last = signal_line.iloc[-1]
+    h_last = histogram.iloc[-1]
+    h_prev = histogram.iloc[-2]
 
-    if crossed_up   and above_zero:   return "Strong Bullish Crossover"
-    if crossed_up:                    return "Bullish Crossover"
-    if crossed_down and not above_zero: return "Strong Bearish Crossover"
-    if crossed_down:                  return "Bearish Crossover"
-    if above_zero   and hist_rising:  return "Bullish Momentum"
-    if not above_zero and not hist_rising: return "Bearish Momentum"
-    if above_zero:                    return "Bullish (Fading)"
-    return "Bearish (Fading)"
+    above_zero  = m_last > 0
+    hist_rising = h_last > h_prev
+    bullish_now = m_last > s_last
+
+    # 1) Aufeinanderfolgende Wochen auf der richtigen Seite der Signallinie
+    ft_weeks = 0
+    for i in range(1, min(followthrough + 3, n)):
+        m = macd_line.iloc[-i]
+        s = signal_line.iloc[-i]
+        if bullish_now and m > s:
+            ft_weeks += 1
+        elif not bullish_now and m < s:
+            ft_weeks += 1
+        else:
+            break
+
+    confirmed = ft_weeks >= followthrough
+
+    # 2) Higher Highs / Lower Lows im Histogramm
+    #    Jeder Balken der letzten ft_weeks muss höher (bull) / tiefer (bear)
+    #    sein als der vorherige — nur prüfen wenn Crossover bereits bestätigt
+    hh_weeks = 0
+    if confirmed and ft_weeks >= 1:
+        for i in range(1, ft_weeks + 1):
+            if -i - 1 < -n:
+                break
+            h_cur  = float(histogram.iloc[-i])
+            h_prev = float(histogram.iloc[-i - 1])
+            if bullish_now and h_cur > h_prev:
+                hh_weeks += 1
+            elif not bullish_now and h_cur < h_prev:
+                hh_weeks += 1
+            else:
+                break
+
+    hh_confirmed = hh_weeks >= followthrough
+
+    if bullish_now:
+        if hh_confirmed and above_zero:
+            momentum = "Strong Bullish Crossover ↑↑"
+        elif hh_confirmed:
+            momentum = "Bullish Crossover ↑↑"
+        elif confirmed and above_zero:
+            momentum = "Strong Bullish Crossover"
+        elif confirmed:
+            momentum = "Bullish Crossover"
+        elif above_zero and hist_rising:
+            momentum = "Bullish Momentum"
+        elif above_zero:
+            momentum = "Bullish (Fading)"
+        else:
+            momentum = f"Unconfirmed Bullish ({ft_weeks}/{followthrough}W)"
+    else:
+        if hh_confirmed and not above_zero:
+            momentum = "Strong Bearish Crossover ↓↓"
+        elif hh_confirmed:
+            momentum = "Bearish Crossover ↓↓"
+        elif confirmed and not above_zero:
+            momentum = "Strong Bearish Crossover"
+        elif confirmed:
+            momentum = "Bearish Crossover"
+        elif not above_zero and not hist_rising:
+            momentum = "Bearish Momentum"
+        elif not above_zero:
+            momentum = "Bearish (Fading)"
+        else:
+            momentum = f"Unconfirmed Bearish ({ft_weeks}/{followthrough}W)"
+
+    return {
+        "momentum":     momentum,
+        "confirmed":    confirmed,
+        "hh_confirmed": hh_confirmed,
+        "ft_weeks":     ft_weeks,
+        "hh_weeks":     hh_weeks,
+        "above_zero":   above_zero,
+    }
 
 
 # ─── Score für Sortierung ─────────────────────────────────────────────────────
 
-MOMENTUM_SCORE = {
-    "Strong Bullish Crossover":  6,
-    "Bullish Crossover":         5,
-    "Bullish Momentum":          4,
-    "Bullish (Fading)":          3,
-    "Bearish (Fading)":          2,
-    "Bearish Momentum":          1,
-    "Bearish Crossover":         0,
-    "Strong Bearish Crossover": -1,
-    "Insufficient data":        -99,
-}
+def momentum_score(momentum: str) -> int:
+    if "Strong Bullish Crossover ↑↑" in momentum: return 8
+    if "Bullish Crossover ↑↑"        in momentum: return 7
+    if "Strong Bullish Crossover"     in momentum: return 6
+    if "Bullish Crossover"            in momentum: return 5
+    if "Bullish Momentum"             in momentum: return 4
+    if "Bullish (Fading)"             in momentum: return 3
+    if "Unconfirmed Bullish"          in momentum: return 2
+    if "Unconfirmed Bearish"          in momentum: return -1
+    if "Bearish (Fading)"             in momentum: return -2
+    if "Bearish Momentum"             in momentum: return -3
+    if "Bearish Crossover ↓↓"         in momentum: return -4
+    if "Strong Bearish Crossover ↓↓"  in momentum: return -5
+    if "Bearish Crossover"            in momentum: return -6
+    if "Strong Bearish Crossover"     in momentum: return -7
+    return -99
 
 EMOJI = {
-    "Strong Bullish Crossover":  "🚀",
-    "Bullish Crossover":         "📈",
-    "Bullish Momentum":          "⬆️ ",
-    "Bullish (Fading)":          "〰️ ",
-    "Bearish (Fading)":          "〰️ ",
-    "Bearish Momentum":          "⬇️ ",
-    "Bearish Crossover":         "📉",
-    "Strong Bearish Crossover":  "🔻",
-    "Insufficient data":         "❓",
+    "Strong Bullish Crossover ↑↑": "🚀🚀",
+    "Bullish Crossover ↑↑":        "📈📈",
+    "Strong Bullish Crossover":    "🚀",
+    "Bullish Crossover":           "📈",
+    "Bullish Momentum":            "⬆️ ",
+    "Bullish (Fading)":            "〰️ ",
+    "Unconfirmed Bullish":         "⏳",
+    "Unconfirmed Bearish":         "⏳",
+    "Bearish (Fading)":            "〰️ ",
+    "Bearish Momentum":            "⬇️ ",
+    "Strong Bearish Crossover ↓↓": "🔻🔻",
+    "Bearish Crossover ↓↓":        "📉📉",
+    "Strong Bearish Crossover":    "🔻",
+    "Bearish Crossover":           "📉",
+    "Insufficient data":           "❓",
 }
+
+def get_emoji(m: str) -> str:
+    for k, v in EMOJI.items():
+        if k in m: return v
+    return ""
 
 
 # ─── Screener ────────────────────────────────────────────────────────────────
 
-def screen(tickers: dict, weeks: int = 104) -> list[dict]:
+def screen(tickers: dict, weeks: int = 104, followthrough: int = 2) -> list[dict]:
     results = []
-    period = f"{max(weeks, 60)}wk"   # yfinance weekly needs enough history
+    period  = f"{max(weeks, 60)}wk"
 
-    print(f"\n  Lade {len(tickers)} Ticker (wöchentlich, {weeks} Wochen)...\n")
+    print(f"\n  Lade {len(tickers)} Ticker · wöchentlich · Follow-Through: {followthrough}W\n")
 
     for ticker, name in tickers.items():
         try:
@@ -174,27 +445,34 @@ def screen(tickers: dict, weeks: int = 104) -> list[dict]:
                 closes = closes.squeeze()
 
             macd_line, signal_line, histogram = calc_macd(closes)
-            momentum = classify_momentum(macd_line, signal_line, histogram)
+            res = classify_momentum(macd_line, signal_line, histogram, followthrough)
 
             price   = float(closes.iloc[-1])
             price_1 = float(closes.iloc[-2])
             chg_pct = (price - price_1) / price_1 * 100
 
+            momentum = res["momentum"]
             results.append({
-                "ticker":    ticker,
-                "name":      name,
-                "price":     round(price, 2),
-                "chg_pct":   round(chg_pct, 2),
-                "macd":      round(float(macd_line.iloc[-1]), 4),
-                "signal":    round(float(signal_line.iloc[-1]), 4),
-                "histogram": round(float(histogram.iloc[-1]), 4),
-                "momentum":  momentum,
-                "score":     MOMENTUM_SCORE.get(momentum, -99),
-                # Last 20 histogram values for sparkline
-                "hist_series": [round(v, 4) for v in histogram.iloc[-20:].tolist()],
-                "fetched_at": datetime.utcnow().isoformat() + "Z",
+                "ticker":       ticker,
+                "name":         name,
+                "price":        round(price, 2),
+                "chg_pct":      round(chg_pct, 2),
+                "macd":         round(float(macd_line.iloc[-1]), 4),
+                "signal":       round(float(signal_line.iloc[-1]), 4),
+                "histogram":    round(float(histogram.iloc[-1]), 4),
+                "momentum":     momentum,
+                "confirmed":    res["confirmed"],
+                "hh_confirmed": res["hh_confirmed"],
+                "ft_weeks":     res["ft_weeks"],
+                "hh_weeks":     res["hh_weeks"],
+                "ft_required":  followthrough,
+                "score":        momentum_score(momentum),
+                "hist_series":  [round(v, 4) for v in histogram.iloc[-20:].tolist()],
+                "fetched_at":   datetime.utcnow().isoformat() + "Z",
             })
-            print(f"  ✓  {ticker:15s}  {EMOJI.get(momentum,'')} {momentum}")
+            hh = "↑↑" if res["hh_confirmed"] else ("↑" if res["confirmed"] else "")
+            conf = f"{'✓✓' if res['hh_confirmed'] else ('✓' if res['confirmed'] else '⏳')}{res['ft_weeks']}/{followthrough}W {hh}"
+            print(f"  {get_emoji(momentum)}  {ticker:15s}  {momentum:<42s}  {conf}")
 
         except Exception as e:
             print(f"  ✗  {ticker:15s}  Fehler: {e}")
@@ -206,49 +484,41 @@ def screen(tickers: dict, weeks: int = 104) -> list[dict]:
 # ─── Console Table Output ─────────────────────────────────────────────────────
 
 def print_table(results: list[dict]):
-    print("\n" + "═" * 90)
-    print(f"  {'TICKER':<14} {'NAME':<26} {'PREIS':>8}  {'WK%':>7}  {'MACD':>8}  {'HIST':>8}  SIGNAL")
-    print("─" * 90)
-
+    ft = results[0]["ft_required"] if results else 2
+    print("\n" + "═" * 108)
+    print(f"  {'TICKER':<15} {'NAME':<24} {'PREIS':>8}  {'WK%':>7}  {'MACD':>8}  {'HIST':>8}  {'FT':>8}  SIGNAL")
+    print("─" * 108)
     for r in results:
-        chg_str  = f"{r['chg_pct']:+.2f}%"
-        macd_str = f"{r['macd']:+.4f}"
-        hist_str = f"{r['histogram']:+.4f}"
-        em       = EMOJI.get(r["momentum"], "")
-        label    = f"{em} {r['momentum']}"
+        hh = r.get("hh_confirmed", False)
+        ft_str = f"{'✓✓' if hh else ('✓' if r['confirmed'] else '⏳')}{r['ft_weeks']}/{r['ft_required']}W"
         print(
-            f"  {r['ticker']:<14} {r['name']:<26} "
-            f"{r['price']:>8.2f}  {chg_str:>7}  {macd_str:>8}  {hist_str:>8}  {label}"
+            f"  {r['ticker']:<15} {r['name']:<24} "
+            f"{r['price']:>8.2f}  {r['chg_pct']:>+7.2f}%  {r['macd']:>+8.4f}  "
+            f"{r['histogram']:>+8.4f}  {ft_str:>8}  {get_emoji(r['momentum'])} {r['momentum']}"
         )
-
-    print("═" * 90)
-    bull = sum(1 for r in results if "Bullish" in r["momentum"])
-    bear = sum(1 for r in results if "Bearish" in r["momentum"])
-    cross = sum(1 for r in results if "Crossover" in r["momentum"])
-    print(f"\n  {bull} Bullish  ·  {bear} Bearish  ·  {cross} Crossovers  ·  {len(results)} total")
-    print(f"  Stand: {datetime.now().strftime('%Y-%m-%d %H:%M')} local\n")
+    print("═" * 108)
+    hh_bull = sum(1 for r in results if "↑↑" in r["momentum"])
+    bull    = sum(1 for r in results if "Bullish" in r["momentum"] and "Unconfirmed" not in r["momentum"] and "↑↑" not in r["momentum"])
+    bear    = sum(1 for r in results if "Bearish" in r["momentum"] and "Unconfirmed" not in r["momentum"])
+    unconf  = sum(1 for r in results if "Unconfirmed" in r["momentum"])
+    print(f"\n  {hh_bull} Bullish ✓✓(HH)  ·  {bull} Bullish ✓  ·  {bear} Bearish  ·  {unconf} Unbestätigt  ·  {len(results)} total")
+    print(f"  Follow-Through: {ft}W + Higher Highs  ·  Stand: {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
 
 
 # ─── Entry Point ─────────────────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser(description="Weekly MACD Momentum Screener")
-    parser.add_argument("--tickers", nargs="+", metavar="TICKER",
-                        help="Eigene Ticker-Liste (Leerzeichen-getrennt)")
-    parser.add_argument("--weeks",   type=int, default=104,
-                        help="Historische Wochen laden (min 60, default 104)")
-    parser.add_argument("--json",    action="store_true",
-                        help="JSON-Output statt Tabelle (für Web-App)")
-    parser.add_argument("--out",     metavar="FILE",
-                        help="JSON in Datei schreiben (z.B. macd_data.json)")
+    parser = argparse.ArgumentParser(description="Weekly MACD Momentum Screener mit Follow-Through")
+    parser.add_argument("--tickers",       nargs="+", metavar="TICKER")
+    parser.add_argument("--weeks",         type=int, default=104)
+    parser.add_argument("--followthrough", type=int, default=2,
+                        help="Wochen Follow-Through für Crossover-Bestätigung (default: 2)")
+    parser.add_argument("--json",          action="store_true")
+    parser.add_argument("--out",           metavar="FILE")
     args = parser.parse_args()
 
-    if args.tickers:
-        tickers = {t: t for t in args.tickers}
-    else:
-        tickers = DEFAULT_TICKERS
-
-    results = screen(tickers, weeks=args.weeks)
+    tickers = {t: t for t in args.tickers} if args.tickers else DEFAULT_TICKERS
+    results = screen(tickers, weeks=args.weeks, followthrough=args.followthrough)
 
     if args.json or args.out:
         payload = json.dumps(results, indent=2, ensure_ascii=False)
