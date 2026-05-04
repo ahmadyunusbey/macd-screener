@@ -265,6 +265,19 @@ DEFAULT_TICKERS = {
 "005930.KS": "Samsung Electronics",
 "000660.KS": "SK Hynix",
 "WDC":	"Western Digital",
+# Metalls
+"AREC": "AMERICAN RESSOURCES",
+"ALI1.F": "Almonty Industries",
+"CRML": "Critical Metals",
+"DC-A.TO": "Dundee Corporation",
+"EUA.L": "Eurasia Mining",
+"GLEN.L": "Glencore plc",
+"IDR": "Idaho Strategic Resources",
+"IMPUY": "Impala Platinum",
+"MP": "MP Materials",
+"REB.F": "Arafura Rare Earths",
+"SBSW": "Sibanye Stillwater",
+"UAMY": "United States Antimony",
 }
 
 
