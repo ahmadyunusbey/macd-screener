@@ -124,6 +124,7 @@ DEFAULT_TICKERS = {
     "SI=F":         "SILBER",
     "CL=F":         "ÖL (WTI)",
     "BZ=F":         "ÖL (BRENT)",
+    "HG=F":         "COPPER",
     "NG=F":         "NATURAL GAS",
     "EURUSD=X":     "EUR/USD",
     "GBPUSD=X":     "GBP/USD",
@@ -278,6 +279,9 @@ DEFAULT_TICKERS = {
 "REB.F": "Arafura Rare Earths",
 "SBSW": "Sibanye Stillwater",
 "UAMY": "United States Antimony",
+"UROY": "URANIUM ROYALTY",
+"USAR": "USA RARE EARTH",
+"UUUU": "ENERGY FUELS",
 }
 
 
