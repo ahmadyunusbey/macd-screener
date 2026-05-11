@@ -132,7 +132,6 @@ DEFAULT_TICKERS = {
     "GBPUSD=X":     "GBP/USD",
     "JPY=X":        "USD/JPY",
     "CHF=X":        "USD/CHF",
-    "000016.SS":    "SSE 50 INDEX",
     "510050.SS":    "CHINA AMC SS50 ETF",
     # Ukraine-Aufbau
     "ENR.DE":       "SIEMENS ENERGY",
@@ -228,6 +227,7 @@ DEFAULT_TICKERS = {
 "BALD-B.ST":"FASTIGHETS BALDER",
 "SVEAF.ST":   "SVEAFASTIGHETER",
 # Communication Services
+"ERIC-B.ST":   "ERICSSON",
 "TEL.OL":     "TELENOR",
 "GOOGL":      "ALPHABET",
 # Energy
