@@ -36,7 +36,7 @@
       0.1843,
       0.2171
     ],
-    "fetched_at": "2026-05-11T17:39:25.956222Z"
+    "fetched_at": "2026-05-11T17:51:18.610606Z"
   },
   {
     "ticker": "INPP.L",
@@ -75,7 +75,7 @@
       0.1895,
       0.2736
     ],
-    "fetched_at": "2026-05-11T17:39:26.177146Z"
+    "fetched_at": "2026-05-11T17:51:18.797216Z"
   },
   {
     "ticker": "RWS.L",
@@ -114,7 +114,7 @@
       1.9838,
       2.4821
     ],
-    "fetched_at": "2026-05-11T17:39:28.243865Z"
+    "fetched_at": "2026-05-11T17:51:20.802057Z"
   },
   {
     "ticker": "SDLF.L",
@@ -153,7 +153,7 @@
       1.6104,
       2.3789
     ],
-    "fetched_at": "2026-05-11T17:39:28.471669Z"
+    "fetched_at": "2026-05-11T17:51:21.027932Z"
   },
   {
     "ticker": "HLMA.L",
@@ -192,7 +192,7 @@
       63.387,
       65.783
     ],
-    "fetched_at": "2026-05-11T17:39:33.600403Z"
+    "fetched_at": "2026-05-11T17:51:25.900911Z"
   },
   {
     "ticker": "LAGR-B.ST",
@@ -231,7 +231,7 @@
       4.6686,
       5.0406
     ],
-    "fetched_at": "2026-05-11T17:39:34.148621Z"
+    "fetched_at": "2026-05-11T17:51:26.556363Z"
   },
   {
     "ticker": "MYCR.ST",
@@ -270,16 +270,16 @@
       9.8106,
       10.2881
     ],
-    "fetched_at": "2026-05-11T17:39:34.543256Z"
+    "fetched_at": "2026-05-11T17:51:26.923143Z"
   },
   {
     "ticker": "VIOG",
     "name": "Vanguard S&P SmallCap 600 Growth",
-    "price": 140.44,
-    "chg_pct": 0.02,
-    "macd": 4.5106,
-    "signal": 3.281,
-    "histogram": 1.2296,
+    "price": 140.7,
+    "chg_pct": 0.21,
+    "macd": 4.5313,
+    "signal": 3.2852,
+    "histogram": 1.2462,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -307,18 +307,18 @@
       0.719,
       1.0201,
       1.2031,
-      1.2296
+      1.2462
     ],
-    "fetched_at": "2026-05-11T17:39:37.255285Z"
+    "fetched_at": "2026-05-11T17:51:29.423792Z"
   },
   {
     "ticker": "FTEC",
     "name": "FIDELITY INFORMATION TECHNOLOGY",
-    "price": 271.67,
-    "chg_pct": 1.23,
-    "macd": 10.9003,
-    "signal": 5.3895,
-    "histogram": 5.5108,
+    "price": 271.68,
+    "chg_pct": 1.24,
+    "macd": 10.9011,
+    "signal": 5.3896,
+    "histogram": 5.5115,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -343,21 +343,21 @@
       -2.7609,
       -1.7432,
       0.1594,
-      1.8572,
+      1.8573,
       2.9079,
       4.5473,
-      5.5108
+      5.5115
     ],
-    "fetched_at": "2026-05-11T17:39:37.651569Z"
+    "fetched_at": "2026-05-11T17:51:29.825355Z"
   },
   {
     "ticker": "BLDP",
     "name": "BALLARD POWER",
-    "price": 4.18,
-    "chg_pct": 1.21,
-    "macd": 0.3184,
-    "signal": 0.1265,
-    "histogram": 0.1919,
+    "price": 4.22,
+    "chg_pct": 2.18,
+    "macd": 0.3216,
+    "signal": 0.1271,
+    "histogram": 0.1945,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -385,9 +385,9 @@
       0.0761,
       0.103,
       0.1613,
-      0.1919
+      0.1945
     ],
-    "fetched_at": "2026-05-11T17:39:39.918678Z"
+    "fetched_at": "2026-05-11T17:51:31.997127Z"
   },
   {
     "ticker": "ITM.L",
@@ -426,7 +426,46 @@
       10.7895,
       12.227
     ],
-    "fetched_at": "2026-05-11T17:39:42.352006Z"
+    "fetched_at": "2026-05-11T17:51:34.438877Z"
+  },
+  {
+    "ticker": "KSPI",
+    "name": "KASPI",
+    "price": 86.83,
+    "chg_pct": 1.08,
+    "macd": 1.9071,
+    "signal": -0.2421,
+    "histogram": 2.1491,
+    "momentum": "Strong Bullish Crossover ↑↑",
+    "confirmed": true,
+    "hh_confirmed": true,
+    "ft_weeks": 4,
+    "hh_weeks": 4,
+    "ft_required": 2,
+    "score": 8,
+    "hist_series": [
+      0.6433,
+      0.9656,
+      0.9977,
+      0.9494,
+      0.7337,
+      0.4352,
+      0.2175,
+      0.0857,
+      -0.1423,
+      -0.0299,
+      -0.2701,
+      -0.1755,
+      -0.1646,
+      0.1045,
+      0.3126,
+      1.0753,
+      1.6891,
+      2.0428,
+      2.1362,
+      2.1491
+    ],
+    "fetched_at": "2026-05-11T17:51:34.581945Z"
   },
   {
     "ticker": "NEL.OL",
@@ -465,7 +504,7 @@
       0.0762,
       0.0947
     ],
-    "fetched_at": "2026-05-11T17:39:42.735285Z"
+    "fetched_at": "2026-05-11T17:51:34.726353Z"
   },
   {
     "ticker": "RBI.VI",
@@ -504,16 +543,16 @@
       0.4718,
       0.5235
     ],
-    "fetched_at": "2026-05-11T17:39:43.203827Z"
+    "fetched_at": "2026-05-11T17:51:35.727269Z"
   },
   {
     "ticker": "HG=F",
     "name": "COPPER",
-    "price": 6.46,
-    "chg_pct": 3.37,
-    "macd": 0.2402,
-    "signal": 0.204,
-    "histogram": 0.0363,
+    "price": 6.47,
+    "chg_pct": 3.48,
+    "macd": 0.2408,
+    "signal": 0.2041,
+    "histogram": 0.0367,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -541,9 +580,9 @@
       -0.0047,
       -0.0049,
       0.0137,
-      0.0363
+      0.0367
     ],
-    "fetched_at": "2026-05-11T17:39:44.610549Z"
+    "fetched_at": "2026-05-11T17:51:37.377151Z"
   },
   {
     "ticker": "GBPUSD=X",
@@ -582,16 +621,16 @@
       0.0008,
       0.0016
     ],
-    "fetched_at": "2026-05-11T17:39:45.072287Z"
+    "fetched_at": "2026-05-11T17:51:37.855897Z"
   },
   {
     "ticker": "CAT",
     "name": "CATERPILLAR",
-    "price": 921.81,
-    "chg_pct": 2.71,
-    "macd": 86.9089,
-    "signal": 72.6391,
-    "histogram": 14.2698,
+    "price": 927.57,
+    "chg_pct": 3.36,
+    "macd": 87.3684,
+    "signal": 72.731,
+    "histogram": 14.6374,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -619,9 +658,9 @@
       4.9608,
       9.9389,
       12.4333,
-      14.2698
+      14.6374
     ],
-    "fetched_at": "2026-05-11T17:39:45.986798Z"
+    "fetched_at": "2026-05-11T17:51:39.755654Z"
   },
   {
     "ticker": "ABBN.SW",
@@ -660,16 +699,16 @@
       1.0707,
       1.3252
     ],
-    "fetched_at": "2026-05-11T17:39:46.342703Z"
+    "fetched_at": "2026-05-11T17:51:40.134088Z"
   },
   {
     "ticker": "PWR",
     "name": "QUANTA SERVICES",
-    "price": 776.15,
-    "chg_pct": 4.18,
-    "macd": 75.1015,
-    "signal": 54.0547,
-    "histogram": 21.0468,
+    "price": 777.37,
+    "chg_pct": 4.34,
+    "macd": 75.1988,
+    "signal": 54.0742,
+    "histogram": 21.1247,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -679,7 +718,7 @@
     "score": 8,
     "hist_series": [
       -3.1182,
-      -4.424,
+      -4.4241,
       -2.3993,
       -1.0784,
       -0.019,
@@ -697,9 +736,9 @@
       6.7778,
       14.3356,
       18.0956,
-      21.0468
+      21.1247
     ],
-    "fetched_at": "2026-05-11T17:39:47.739893Z"
+    "fetched_at": "2026-05-11T17:51:41.747757Z"
   },
   {
     "ticker": "ANA.MC",
@@ -738,7 +777,7 @@
       3.1077,
       3.487
     ],
-    "fetched_at": "2026-05-11T17:39:48.936283Z"
+    "fetched_at": "2026-05-11T17:51:43.022036Z"
   },
   {
     "ticker": "HLUN-B.CO",
@@ -777,16 +816,16 @@
       0.436,
       0.4796
     ],
-    "fetched_at": "2026-05-11T17:39:54.566044Z"
+    "fetched_at": "2026-05-11T17:51:48.735484Z"
   },
   {
     "ticker": "CDLR",
     "name": "CADELER",
-    "price": 29.52,
-    "chg_pct": -0.15,
-    "macd": 1.9898,
-    "signal": 1.4703,
-    "histogram": 0.5195,
+    "price": 29.47,
+    "chg_pct": -0.34,
+    "macd": 1.9855,
+    "signal": 1.4694,
+    "histogram": 0.516,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -814,9 +853,9 @@
       0.1981,
       0.3316,
       0.4716,
-      0.5195
+      0.516
     ],
-    "fetched_at": "2026-05-11T17:39:55.471849Z"
+    "fetched_at": "2026-05-11T17:51:49.729342Z"
   },
   {
     "ticker": "NOKIA.HE",
@@ -855,16 +894,16 @@
       0.3444,
       0.4128
     ],
-    "fetched_at": "2026-05-11T17:40:01.116009Z"
+    "fetched_at": "2026-05-11T17:51:55.099639Z"
   },
   {
     "ticker": "GOOGL",
     "name": "ALPHABET",
-    "price": 393.5,
-    "chg_pct": -1.82,
-    "macd": 27.0398,
-    "signal": 20.2949,
-    "histogram": 6.7449,
+    "price": 393.14,
+    "chg_pct": -1.91,
+    "macd": 27.0111,
+    "signal": 20.2892,
+    "histogram": 6.7219,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -892,18 +931,18 @@
       -1.093,
       2.7163,
       5.7693,
-      6.7449
+      6.7219
     ],
-    "fetched_at": "2026-05-11T17:40:02.408276Z"
+    "fetched_at": "2026-05-11T17:51:56.765106Z"
   },
   {
     "ticker": "HYDR",
     "name": "HYDROGEN ETF",
-    "price": 67.04,
-    "chg_pct": 6.73,
-    "macd": 6.6943,
-    "signal": 3.9127,
-    "histogram": 2.7816,
+    "price": 67.14,
+    "chg_pct": 6.89,
+    "macd": 6.7023,
+    "signal": 3.9143,
+    "histogram": 2.788,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -931,9 +970,9 @@
       0.8298,
       1.6287,
       2.2624,
-      2.7816
+      2.788
     ],
-    "fetched_at": "2026-05-11T17:40:02.649623Z"
+    "fetched_at": "2026-05-11T17:51:56.929169Z"
   },
   {
     "ticker": "PLSV.OL",
@@ -972,16 +1011,16 @@
       0.2363,
       0.2481
     ],
-    "fetched_at": "2026-05-11T17:40:03.209499Z"
+    "fetched_at": "2026-05-11T17:51:57.412564Z"
   },
   {
     "ticker": "ALAB",
     "name": "Astera Labs",
-    "price": 204.51,
-    "chg_pct": 2.36,
-    "macd": 10.8787,
-    "signal": 2.2196,
-    "histogram": 8.6591,
+    "price": 205.35,
+    "chg_pct": 2.79,
+    "macd": 10.9457,
+    "signal": 2.233,
+    "histogram": 8.7127,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1009,18 +1048,18 @@
       5.4978,
       7.5841,
       8.3282,
-      8.6591
+      8.7127
     ],
-    "fetched_at": "2026-05-11T17:40:03.343807Z"
+    "fetched_at": "2026-05-11T17:51:57.547374Z"
   },
   {
     "ticker": "AMAT",
     "name": "Applied Materials",
-    "price": 447.1,
-    "chg_pct": 2.68,
-    "macd": 46.0067,
-    "signal": 41.0248,
-    "histogram": 4.9819,
+    "price": 446.55,
+    "chg_pct": 2.55,
+    "macd": 45.9629,
+    "signal": 41.016,
+    "histogram": 4.9468,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1048,18 +1087,18 @@
       3.6846,
       2.2333,
       3.8113,
-      4.9819
+      4.9468
     ],
-    "fetched_at": "2026-05-11T17:40:03.518375Z"
+    "fetched_at": "2026-05-11T17:51:57.718484Z"
   },
   {
     "ticker": "AMD",
     "name": "AMD",
-    "price": 465.46,
-    "chg_pct": 2.26,
-    "macd": 52.4639,
-    "signal": 26.2403,
-    "histogram": 26.2236,
+    "price": 465.75,
+    "chg_pct": 2.32,
+    "macd": 52.487,
+    "signal": 26.2449,
+    "histogram": 26.2421,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1087,18 +1126,18 @@
       9.609,
       13.999,
       21.9276,
-      26.2236
+      26.2421
     ],
-    "fetched_at": "2026-05-11T17:40:03.676262Z"
+    "fetched_at": "2026-05-11T17:51:57.929721Z"
   },
   {
     "ticker": "ADI",
     "name": "Analog Devices",
-    "price": 418.64,
-    "chg_pct": 0.51,
-    "macd": 36.3893,
-    "signal": 28.4769,
-    "histogram": 7.9124,
+    "price": 418.15,
+    "chg_pct": 0.39,
+    "macd": 36.3498,
+    "signal": 28.469,
+    "histogram": 7.8808,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1126,18 +1165,18 @@
       4.8378,
       6.0771,
       7.5125,
-      7.9124
+      7.8808
     ],
-    "fetched_at": "2026-05-11T17:40:03.951566Z"
+    "fetched_at": "2026-05-11T17:51:58.091864Z"
   },
   {
     "ticker": "ASML",
     "name": "ASML",
-    "price": 1552.87,
-    "chg_pct": -2.46,
-    "macd": 117.9899,
-    "signal": 115.124,
-    "histogram": 2.8659,
+    "price": 1557.63,
+    "chg_pct": -2.16,
+    "macd": 118.3696,
+    "signal": 115.1999,
+    "histogram": 3.1696,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1151,7 +1190,7 @@
       24.9478,
       30.3088,
       33.3775,
-      31.9774,
+      31.9775,
       28.0053,
       27.1009,
       22.7646,
@@ -1165,18 +1204,18 @@
       -6.0181,
       -7.9827,
       0.8918,
-      2.8659
+      3.1696
     ],
-    "fetched_at": "2026-05-11T17:40:04.267453Z"
+    "fetched_at": "2026-05-11T17:51:58.405710Z"
   },
   {
     "ticker": "AVGO",
     "name": "Broadcom",
-    "price": 429.92,
-    "chg_pct": -0.02,
-    "macd": 25.0812,
-    "signal": 14.559,
-    "histogram": 10.5222,
+    "price": 429.82,
+    "chg_pct": -0.04,
+    "macd": 25.0732,
+    "signal": 14.5574,
+    "histogram": 10.5158,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1204,9 +1243,9 @@
       7.1803,
       9.169,
       10.4063,
-      10.5222
+      10.5158
     ],
-    "fetched_at": "2026-05-11T17:40:04.421357Z"
+    "fetched_at": "2026-05-11T17:51:58.559351Z"
   },
   {
     "ticker": "AIXA.DE",
@@ -1245,16 +1284,16 @@
       2.0795,
       2.1393
     ],
-    "fetched_at": "2026-05-11T17:40:04.595157Z"
+    "fetched_at": "2026-05-11T17:51:58.812059Z"
   },
   {
     "ticker": "CRDO",
     "name": "Credo Technology",
-    "price": 207.64,
-    "chg_pct": 10.15,
-    "macd": 14.2742,
-    "signal": 4.7634,
-    "histogram": 9.5107,
+    "price": 208.65,
+    "chg_pct": 10.69,
+    "macd": 14.3551,
+    "signal": 4.7796,
+    "histogram": 9.5755,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1282,18 +1321,18 @@
       4.7752,
       6.8119,
       7.9911,
-      9.5107
+      9.5755
     ],
-    "fetched_at": "2026-05-11T17:40:04.730029Z"
+    "fetched_at": "2026-05-11T17:51:58.963415Z"
   },
   {
     "ticker": "GFS",
     "name": "GLOBALFOUNDRIES",
-    "price": 75.7,
-    "chg_pct": 2.13,
-    "macd": 7.8428,
-    "signal": 4.6575,
-    "histogram": 3.1854,
+    "price": 76.0,
+    "chg_pct": 2.54,
+    "macd": 7.8668,
+    "signal": 4.6623,
+    "histogram": 3.2045,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1321,9 +1360,9 @@
       1.4403,
       1.977,
       2.7687,
-      3.1854
+      3.2045
     ],
-    "fetched_at": "2026-05-11T17:40:04.877349Z"
+    "fetched_at": "2026-05-11T17:51:59.101019Z"
   },
   {
     "ticker": "IFX.DE",
@@ -1362,16 +1401,16 @@
       1.4048,
       1.9306
     ],
-    "fetched_at": "2026-05-11T17:40:05.110499Z"
+    "fetched_at": "2026-05-11T17:51:59.339343Z"
   },
   {
     "ticker": "INTC",
     "name": "Intel",
-    "price": 127.18,
-    "chg_pct": 1.81,
-    "macd": 18.5237,
-    "signal": 10.2803,
-    "histogram": 8.2434,
+    "price": 127.21,
+    "chg_pct": 1.83,
+    "macd": 18.5265,
+    "signal": 10.2808,
+    "histogram": 8.2457,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1399,18 +1438,18 @@
       2.894,
       4.6338,
       7.0371,
-      8.2434
+      8.2457
     ],
-    "fetched_at": "2026-05-11T17:40:05.307262Z"
+    "fetched_at": "2026-05-11T17:51:59.528376Z"
   },
   {
     "ticker": "LRCX",
     "name": "Lam Research",
-    "price": 297.6,
-    "chg_pct": 1.21,
-    "macd": 31.6791,
-    "signal": 28.033,
-    "histogram": 3.6461,
+    "price": 296.72,
+    "chg_pct": 0.91,
+    "macd": 31.6093,
+    "signal": 28.019,
+    "histogram": 3.5903,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1438,18 +1477,18 @@
       1.4989,
       0.9586,
       2.7109,
-      3.6461
+      3.5903
     ],
-    "fetched_at": "2026-05-11T17:40:05.645464Z"
+    "fetched_at": "2026-05-11T17:51:59.869647Z"
   },
   {
     "ticker": "MCHP",
     "name": "Microchip Technology",
-    "price": 97.64,
-    "chg_pct": -1.46,
-    "macd": 7.1617,
-    "signal": 4.0509,
-    "histogram": 3.1108,
+    "price": 97.6,
+    "chg_pct": -1.5,
+    "macd": 7.1585,
+    "signal": 4.0503,
+    "histogram": 3.1082,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1477,18 +1516,18 @@
       1.1853,
       2.1184,
       2.897,
-      3.1108
+      3.1082
     ],
-    "fetched_at": "2026-05-11T17:40:05.879149Z"
+    "fetched_at": "2026-05-11T17:52:00.057042Z"
   },
   {
     "ticker": "MU",
     "name": "Micron",
-    "price": 804.97,
-    "chg_pct": 7.79,
-    "macd": 104.7047,
-    "signal": 72.0216,
-    "histogram": 32.6831,
+    "price": 805.73,
+    "chg_pct": 7.89,
+    "macd": 104.7657,
+    "signal": 72.0338,
+    "histogram": 32.7319,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1516,18 +1555,18 @@
       1.0121,
       5.8519,
       21.1018,
-      32.6831
+      32.7319
     ],
-    "fetched_at": "2026-05-11T17:40:06.519696Z"
+    "fetched_at": "2026-05-11T17:52:00.737966Z"
   },
   {
     "ticker": "NVDA",
     "name": "NVIDIA",
-    "price": 220.9,
-    "chg_pct": 2.65,
-    "macd": 8.5077,
-    "signal": 5.036,
-    "histogram": 3.4717,
+    "price": 220.85,
+    "chg_pct": 2.63,
+    "macd": 8.5033,
+    "signal": 5.0351,
+    "histogram": 3.4682,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1555,18 +1594,18 @@
       1.458,
       1.594,
       2.6326,
-      3.4717
+      3.4682
     ],
-    "fetched_at": "2026-05-11T17:40:06.742907Z"
+    "fetched_at": "2026-05-11T17:52:00.890292Z"
   },
   {
     "ticker": "NXPI",
     "name": "NXP",
-    "price": 300.27,
-    "chg_pct": 1.87,
-    "macd": 15.131,
-    "signal": 4.7637,
-    "histogram": 10.3673,
+    "price": 301.13,
+    "chg_pct": 2.16,
+    "macd": 15.1996,
+    "signal": 4.7775,
+    "histogram": 10.4221,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1594,18 +1633,18 @@
       0.8349,
       5.8903,
       8.7189,
-      10.3673
+      10.4221
     ],
-    "fetched_at": "2026-05-11T17:40:06.923452Z"
+    "fetched_at": "2026-05-11T17:52:01.059729Z"
   },
   {
     "ticker": "ON",
     "name": "ON Semiconductor",
-    "price": 105.09,
-    "chg_pct": 1.83,
-    "macd": 11.6017,
-    "signal": 7.054,
-    "histogram": 4.5477,
+    "price": 105.32,
+    "chg_pct": 2.05,
+    "macd": 11.62,
+    "signal": 7.0577,
+    "histogram": 4.5623,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1633,18 +1672,18 @@
       2.8082,
       3.9442,
       4.4165,
-      4.5477
+      4.5623
     ],
-    "fetched_at": "2026-05-11T17:40:07.600577Z"
+    "fetched_at": "2026-05-11T17:52:01.611344Z"
   },
   {
     "ticker": "QCOM",
     "name": "QUALCOMM",
-    "price": 237.43,
-    "chg_pct": 8.37,
-    "macd": 8.8806,
-    "signal": -1.7613,
-    "histogram": 10.6419,
+    "price": 236.71,
+    "chg_pct": 8.04,
+    "macd": 8.8232,
+    "signal": -1.7728,
+    "histogram": 10.596,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1672,18 +1711,18 @@
       -0.2945,
       2.605,
       7.0276,
-      10.6419
+      10.596
     ],
-    "fetched_at": "2026-05-11T17:40:07.764920Z"
+    "fetched_at": "2026-05-11T17:52:01.793826Z"
   },
   {
     "ticker": "SNDK",
     "name": "SanDisk",
-    "price": 1566.1,
-    "chg_pct": 0.24,
-    "macd": 280.8421,
-    "signal": 194.7255,
-    "histogram": 86.1167,
+    "price": 1564.22,
+    "chg_pct": 0.12,
+    "macd": 280.6922,
+    "signal": 194.6955,
+    "histogram": 85.9967,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1711,18 +1750,18 @@
       31.4784,
       44.8365,
       73.4003,
-      86.1167
+      85.9967
     ],
-    "fetched_at": "2026-05-11T17:40:08.890269Z"
+    "fetched_at": "2026-05-11T17:52:02.785807Z"
   },
   {
     "ticker": "STM",
     "name": "STMicroelectronics",
-    "price": 59.44,
-    "chg_pct": 0.46,
-    "macd": 7.3647,
-    "signal": 4.4125,
-    "histogram": 2.9522,
+    "price": 59.43,
+    "chg_pct": 0.44,
+    "macd": 7.3635,
+    "signal": 4.4122,
+    "histogram": 2.9513,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1750,18 +1789,18 @@
       1.8017,
       2.4003,
       2.8409,
-      2.9522
+      2.9513
     ],
-    "fetched_at": "2026-05-11T17:40:09.066613Z"
+    "fetched_at": "2026-05-11T17:52:03.014563Z"
   },
   {
     "ticker": "STX",
     "name": "Seagate",
-    "price": 836.12,
-    "chg_pct": 6.83,
-    "macd": 121.9309,
-    "signal": 82.3209,
-    "histogram": 39.61,
+    "price": 839.16,
+    "chg_pct": 7.22,
+    "macd": 122.1734,
+    "signal": 82.3694,
+    "histogram": 39.804,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1789,18 +1828,18 @@
       14.2645,
       24.9782,
       33.355,
-      39.61
+      39.804
     ],
-    "fetched_at": "2026-05-11T17:40:09.238411Z"
+    "fetched_at": "2026-05-11T17:52:03.198145Z"
   },
   {
     "ticker": "TXN",
     "name": "Texas Instruments",
-    "price": 294.3,
-    "chg_pct": 2.78,
-    "macd": 24.1932,
-    "signal": 14.1633,
-    "histogram": 10.0298,
+    "price": 294.83,
+    "chg_pct": 2.96,
+    "macd": 24.2354,
+    "signal": 14.1718,
+    "histogram": 10.0636,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1828,18 +1867,18 @@
       5.5164,
       7.8456,
       9.2394,
-      10.0298
+      10.0636
     ],
-    "fetched_at": "2026-05-11T17:40:09.965504Z"
+    "fetched_at": "2026-05-11T17:52:03.777983Z"
   },
   {
     "ticker": "000660.KS",
     "name": "SK Hynix",
     "price": 1686000.0,
     "chg_pct": 31.1,
-    "macd": 211561.8935,
-    "signal": 162003.4685,
-    "histogram": 49558.425,
+    "macd": 211561.8939,
+    "signal": 162003.469,
+    "histogram": 49558.4248,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1848,37 +1887,37 @@
     "ft_required": 2,
     "score": 8,
     "hist_series": [
-      6685.4398,
+      6685.4399,
       10535.8692,
       15942.1864,
-      18500.4504,
-      19033.6371,
-      26570.9266,
-      24538.1503,
-      23628.3903,
-      25199.9524,
-      30926.0453,
-      23132.7436,
-      14946.4177,
-      13992.5874,
-      6677.2341,
-      -3172.2342,
-      -812.4069,
-      5887.2326,
-      14495.6344,
-      21901.5764,
-      49558.425
+      18500.4503,
+      19033.637,
+      26570.9265,
+      24538.1502,
+      23628.3901,
+      25199.9522,
+      30926.0452,
+      23132.7434,
+      14946.4175,
+      13992.5872,
+      6677.2339,
+      -3172.2343,
+      -812.4071,
+      5887.2325,
+      14495.6343,
+      21901.5762,
+      49558.4248
     ],
-    "fetched_at": "2026-05-11T17:40:10.193294Z"
+    "fetched_at": "2026-05-11T17:52:03.999777Z"
   },
   {
     "ticker": "WDC",
     "name": "Western Digital",
-    "price": 519.22,
-    "chg_pct": 8.17,
-    "macd": 78.1425,
-    "signal": 58.7759,
-    "histogram": 19.3666,
+    "price": 518.5,
+    "chg_pct": 8.02,
+    "macd": 78.085,
+    "signal": 58.7644,
+    "histogram": 19.3206,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1906,18 +1945,18 @@
       9.3356,
       12.1037,
       15.8424,
-      19.3666
+      19.3206
     ],
-    "fetched_at": "2026-05-11T17:40:10.397518Z"
+    "fetched_at": "2026-05-11T17:52:04.216756Z"
   },
   {
     "ticker": "CRML",
     "name": "Critical Metals",
-    "price": 12.83,
-    "chg_pct": 2.39,
-    "macd": 0.6611,
-    "signal": 0.4549,
-    "histogram": 0.2062,
+    "price": 12.85,
+    "chg_pct": 2.51,
+    "macd": 0.6623,
+    "signal": 0.4551,
+    "histogram": 0.2071,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1945,18 +1984,18 @@
       -0.1219,
       0.036,
       0.1355,
-      0.2062
+      0.2071
     ],
-    "fetched_at": "2026-05-11T17:40:11.228736Z"
+    "fetched_at": "2026-05-11T17:52:05.020622Z"
   },
   {
     "ticker": "IDR",
     "name": "Idaho Strategic Resources",
-    "price": 50.85,
-    "chg_pct": 3.59,
-    "macd": 3.0384,
-    "signal": 2.0266,
-    "histogram": 1.0118,
+    "price": 51.15,
+    "chg_pct": 4.2,
+    "macd": 3.0623,
+    "signal": 2.0314,
+    "histogram": 1.031,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -1984,18 +2023,18 @@
       -0.2681,
       0.0733,
       0.6108,
-      1.0118
+      1.031
     ],
-    "fetched_at": "2026-05-11T17:40:11.852069Z"
+    "fetched_at": "2026-05-11T17:52:05.676583Z"
   },
   {
     "ticker": "MP",
     "name": "MP Materials",
-    "price": 69.84,
-    "chg_pct": 3.57,
-    "macd": 1.8551,
-    "signal": 0.6055,
-    "histogram": 1.2496,
+    "price": 69.52,
+    "chg_pct": 3.1,
+    "macd": 1.8296,
+    "signal": 0.6004,
+    "histogram": 1.2292,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -2023,18 +2062,18 @@
       -0.2414,
       0.4217,
       0.8656,
-      1.2496
+      1.2292
     ],
-    "fetched_at": "2026-05-11T17:40:12.147698Z"
+    "fetched_at": "2026-05-11T17:52:06.000417Z"
   },
   {
     "ticker": "USAR",
     "name": "USA RARE EARTH",
-    "price": 27.66,
-    "chg_pct": 2.6,
-    "macd": 2.0377,
-    "signal": 1.0282,
-    "histogram": 1.0096,
+    "price": 27.59,
+    "chg_pct": 2.36,
+    "macd": 2.0325,
+    "signal": 1.0271,
+    "histogram": 1.0054,
     "momentum": "Strong Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -2062,9 +2101,9 @@
       0.0672,
       0.5309,
       0.8287,
-      1.0096
+      1.0054
     ],
-    "fetched_at": "2026-05-11T17:40:12.891561Z"
+    "fetched_at": "2026-05-11T17:52:06.749613Z"
   },
   {
     "ticker": "MONY.L",
@@ -2103,7 +2142,7 @@
       1.8958,
       2.297
     ],
-    "fetched_at": "2026-05-11T17:39:27.302679Z"
+    "fetched_at": "2026-05-11T17:51:19.865931Z"
   },
   {
     "ticker": "TRIG.L",
@@ -2142,7 +2181,7 @@
       0.6549,
       0.6892
     ],
-    "fetched_at": "2026-05-11T17:39:28.978888Z"
+    "fetched_at": "2026-05-11T17:51:21.572097Z"
   },
   {
     "ticker": "HOLN.SW",
@@ -2181,16 +2220,16 @@
       0.3129,
       0.5083
     ],
-    "fetched_at": "2026-05-11T17:39:33.777376Z"
+    "fetched_at": "2026-05-11T17:51:26.074493Z"
   },
   {
     "ticker": "NVO",
     "name": "NOVO NORDISC",
-    "price": 46.71,
-    "chg_pct": 1.39,
-    "macd": -2.6396,
-    "signal": -3.8506,
-    "histogram": 1.211,
+    "price": 46.65,
+    "chg_pct": 1.27,
+    "macd": -2.644,
+    "signal": -3.8515,
+    "histogram": 1.2075,
     "momentum": "Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -2218,9 +2257,9 @@
       -0.0199,
       0.4481,
       0.8976,
-      1.211
+      1.2075
     ],
-    "fetched_at": "2026-05-11T17:39:34.992596Z"
+    "fetched_at": "2026-05-11T17:51:27.301228Z"
   },
   {
     "ticker": "SIKA.SW",
@@ -2259,7 +2298,7 @@
       2.054,
       2.151
     ],
-    "fetched_at": "2026-05-11T17:39:35.425572Z"
+    "fetched_at": "2026-05-11T17:51:27.680869Z"
   },
   {
     "ticker": "VIT-B.ST",
@@ -2298,7 +2337,7 @@
       7.1641,
       7.5393
     ],
-    "fetched_at": "2026-05-11T17:39:36.232202Z"
+    "fetched_at": "2026-05-11T17:51:28.416199Z"
   },
   {
     "ticker": "VITR.ST",
@@ -2337,16 +2376,16 @@
       2.4335,
       2.7384
     ],
-    "fetched_at": "2026-05-11T17:39:36.588303Z"
+    "fetched_at": "2026-05-11T17:51:28.852468Z"
   },
   {
     "ticker": "ARQQ",
     "name": "ARQIT",
-    "price": 15.05,
-    "chg_pct": 0.6,
-    "macd": -3.6123,
-    "signal": -3.9826,
-    "histogram": 0.3702,
+    "price": 15.11,
+    "chg_pct": 1.03,
+    "macd": -3.6072,
+    "signal": -3.9815,
+    "histogram": 0.3743,
     "momentum": "Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -2374,9 +2413,9 @@
       -0.1128,
       0.0607,
       0.2321,
-      0.3702
+      0.3743
     ],
-    "fetched_at": "2026-05-11T17:39:39.718888Z"
+    "fetched_at": "2026-05-11T17:51:31.838382Z"
   },
   {
     "ticker": "WOR.AX",
@@ -2415,7 +2454,7 @@
       0.1035,
       0.1172
     ],
-    "fetched_at": "2026-05-11T17:39:48.403190Z"
+    "fetched_at": "2026-05-11T17:51:42.476883Z"
   },
   {
     "ticker": "SGO.PA",
@@ -2454,7 +2493,7 @@
       0.1032,
       0.3644
     ],
-    "fetched_at": "2026-05-11T17:39:51.374709Z"
+    "fetched_at": "2026-05-11T17:51:45.079316Z"
   },
   {
     "ticker": "NOVO-B.CO",
@@ -2493,16 +2532,16 @@
       3.1242,
       5.7235
     ],
-    "fetched_at": "2026-05-11T17:39:54.427085Z"
+    "fetched_at": "2026-05-11T17:51:48.573152Z"
   },
   {
     "ticker": "SWKS",
     "name": "Skyworks",
-    "price": 68.6,
-    "chg_pct": 2.73,
-    "macd": -0.062,
-    "signal": -1.9117,
-    "histogram": 1.8496,
+    "price": 68.54,
+    "chg_pct": 2.64,
+    "macd": -0.0664,
+    "signal": -1.9126,
+    "histogram": 1.8461,
     "momentum": "Bullish Crossover ↑↑",
     "confirmed": true,
     "hh_confirmed": true,
@@ -2530,18 +2569,18 @@
       0.7633,
       1.4517,
       1.6653,
-      1.8496
+      1.8461
     ],
-    "fetched_at": "2026-05-11T17:40:09.470849Z"
+    "fetched_at": "2026-05-11T17:52:03.361311Z"
   },
   {
     "ticker": "FLNG",
     "name": "FLEX LNG",
-    "price": 32.8,
-    "chg_pct": 0.24,
-    "macd": 2.1138,
-    "signal": 1.761,
-    "histogram": 0.3528,
+    "price": 32.83,
+    "chg_pct": 0.35,
+    "macd": 2.1166,
+    "signal": 1.7616,
+    "histogram": 0.355,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -2569,9 +2608,9 @@
       0.3056,
       0.3494,
       0.3696,
-      0.3528
+      0.355
     ],
-    "fetched_at": "2026-05-11T17:39:25.318826Z"
+    "fetched_at": "2026-05-11T17:51:17.369612Z"
   },
   {
     "ticker": "ITH.L",
@@ -2610,7 +2649,7 @@
       4.4898,
       3.6945
     ],
-    "fetched_at": "2026-05-11T17:39:26.400189Z"
+    "fetched_at": "2026-05-11T17:51:18.951948Z"
   },
   {
     "ticker": "NESN.SW",
@@ -2649,16 +2688,16 @@
       0.3347,
       0.3034
     ],
-    "fetched_at": "2026-05-11T17:39:27.477800Z"
+    "fetched_at": "2026-05-11T17:51:20.111830Z"
   },
   {
     "ticker": "PBR-A",
     "name": "PETROBRAS",
-    "price": 18.84,
-    "chg_pct": 0.94,
-    "macd": 1.8893,
-    "signal": 1.6917,
-    "histogram": 0.1976,
+    "price": 18.85,
+    "chg_pct": 0.99,
+    "macd": 1.89,
+    "signal": 1.6919,
+    "histogram": 0.1982,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -2686,9 +2725,9 @@
       0.4296,
       0.4057,
       0.2894,
-      0.1976
+      0.1982
     ],
-    "fetched_at": "2026-05-11T17:39:27.846840Z"
+    "fetched_at": "2026-05-11T17:51:20.416486Z"
   },
   {
     "ticker": "RIO.L",
@@ -2718,7 +2757,7 @@
       130.6347,
       81.7486,
       37.1564,
-      -23.9854,
+      -23.9855,
       -46.4193,
       -26.8451,
       -1.9446,
@@ -2727,7 +2766,7 @@
       14.4136,
       26.4779
     ],
-    "fetched_at": "2026-05-11T17:39:28.046238Z"
+    "fetched_at": "2026-05-11T17:51:20.621358Z"
   },
   {
     "ticker": "SQZ.L",
@@ -2766,7 +2805,7 @@
       3.109,
       1.368
     ],
-    "fetched_at": "2026-05-11T17:39:28.626544Z"
+    "fetched_at": "2026-05-11T17:51:21.174680Z"
   },
   {
     "ticker": "VOD.L",
@@ -2805,7 +2844,7 @@
       0.0558,
       0.033
     ],
-    "fetched_at": "2026-05-11T17:39:29.997763Z"
+    "fetched_at": "2026-05-11T17:51:22.235599Z"
   },
   {
     "ticker": "ADDT-B.ST",
@@ -2844,7 +2883,7 @@
       2.8665,
       2.1543
     ],
-    "fetched_at": "2026-05-11T17:39:31.627557Z"
+    "fetched_at": "2026-05-11T17:51:23.830899Z"
   },
   {
     "ticker": "NDINSCKL1.CO",
@@ -2883,7 +2922,7 @@
       0.6944,
       0.6602
     ],
-    "fetched_at": "2026-05-11T17:39:34.768946Z"
+    "fetched_at": "2026-05-11T17:51:27.077863Z"
   },
   {
     "ticker": "VACN.SW",
@@ -2922,7 +2961,7 @@
       4.2224,
       5.8264
     ],
-    "fetched_at": "2026-05-11T17:39:36.390983Z"
+    "fetched_at": "2026-05-11T17:51:28.648044Z"
   },
   {
     "ticker": "YAR.OL",
@@ -2961,46 +3000,7 @@
       3.0087,
       0.7695
     ],
-    "fetched_at": "2026-05-11T17:39:36.831359Z"
-  },
-  {
-    "ticker": "KSPI",
-    "name": "KASPI",
-    "price": 86.56,
-    "chg_pct": 0.77,
-    "macd": 1.8856,
-    "signal": -0.2464,
-    "histogram": 2.1319,
-    "momentum": "Strong Bullish Crossover",
-    "confirmed": true,
-    "hh_confirmed": false,
-    "ft_weeks": 4,
-    "hh_weeks": 0,
-    "ft_required": 2,
-    "score": 6,
-    "hist_series": [
-      0.6433,
-      0.9656,
-      0.9977,
-      0.9494,
-      0.7337,
-      0.4352,
-      0.2175,
-      0.0857,
-      -0.1423,
-      -0.0299,
-      -0.2701,
-      -0.1755,
-      -0.1646,
-      0.1045,
-      0.3126,
-      1.0753,
-      1.6891,
-      2.0428,
-      2.1362,
-      2.1319
-    ],
-    "fetched_at": "2026-05-11T17:39:42.525305Z"
+    "fetched_at": "2026-05-11T17:51:29.030255Z"
   },
   {
     "ticker": "SANN.SW",
@@ -3039,7 +3039,7 @@
       0.2197,
       0.1868
     ],
-    "fetched_at": "2026-05-11T17:39:43.540108Z"
+    "fetched_at": "2026-05-11T17:51:36.127458Z"
   },
   {
     "ticker": "TRN.MI",
@@ -3078,16 +3078,16 @@
       0.0193,
       0.0001
     ],
-    "fetched_at": "2026-05-11T17:39:43.715255Z"
+    "fetched_at": "2026-05-11T17:51:36.324750Z"
   },
   {
     "ticker": "CL=F",
     "name": "ÖL (WTI)",
-    "price": 98.56,
-    "chg_pct": 3.29,
-    "macd": 9.5159,
-    "signal": 8.3437,
-    "histogram": 1.1721,
+    "price": 98.18,
+    "chg_pct": 2.89,
+    "macd": 9.4856,
+    "signal": 8.3377,
+    "histogram": 1.1479,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3115,18 +3115,18 @@
       2.2311,
       2.1665,
       1.5264,
-      1.1721
+      1.1479
     ],
-    "fetched_at": "2026-05-11T17:39:44.323887Z"
+    "fetched_at": "2026-05-11T17:51:36.986738Z"
   },
   {
     "ticker": "BZ=F",
     "name": "ÖL (BRENT)",
-    "price": 104.39,
-    "chg_pct": 3.06,
-    "macd": 10.0734,
-    "signal": 8.8645,
-    "histogram": 1.2089,
+    "price": 104.19,
+    "chg_pct": 2.86,
+    "macd": 10.0574,
+    "signal": 8.8613,
+    "histogram": 1.1962,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3154,9 +3154,9 @@
       2.4151,
       2.3116,
       1.6121,
-      1.2089
+      1.1962
     ],
-    "fetched_at": "2026-05-11T17:39:44.466142Z"
+    "fetched_at": "2026-05-11T17:51:37.172073Z"
   },
   {
     "ticker": "ENR.DE",
@@ -3195,16 +3195,16 @@
       1.9435,
       1.6502
     ],
-    "fetched_at": "2026-05-11T17:39:45.552271Z"
+    "fetched_at": "2026-05-11T17:51:39.178295Z"
   },
   {
     "ticker": "JCI",
     "name": "JOHNSON CONTROLS",
-    "price": 142.54,
-    "chg_pct": 2.17,
-    "macd": 7.402,
-    "signal": 7.3113,
-    "histogram": 0.0907,
+    "price": 142.83,
+    "chg_pct": 2.37,
+    "macd": 7.4247,
+    "signal": 7.3158,
+    "histogram": 0.1089,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3232,18 +3232,18 @@
       0.4136,
       0.5588,
       0.1996,
-      0.0907
+      0.1089
     ],
-    "fetched_at": "2026-05-11T17:39:46.169343Z"
+    "fetched_at": "2026-05-11T17:51:39.939471Z"
   },
   {
     "ticker": "ETN",
     "name": "EATON",
-    "price": 417.97,
-    "chg_pct": 4.39,
-    "macd": 17.7526,
-    "signal": 11.9169,
-    "histogram": 5.8357,
+    "price": 420.4,
+    "chg_pct": 4.99,
+    "macd": 17.9464,
+    "signal": 11.9556,
+    "histogram": 5.9908,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3271,9 +3271,9 @@
       6.7126,
       7.5444,
       6.0588,
-      5.8357
+      5.9908
     ],
-    "fetched_at": "2026-05-11T17:39:46.561470Z"
+    "fetched_at": "2026-05-11T17:51:40.370713Z"
   },
   {
     "ticker": "SU.PA",
@@ -3312,7 +3312,7 @@
       2.1843,
       2.2522
     ],
-    "fetched_at": "2026-05-11T17:39:46.992104Z"
+    "fetched_at": "2026-05-11T17:51:40.855824Z"
   },
   {
     "ticker": "TE.PA",
@@ -3351,7 +3351,7 @@
       0.8656,
       0.6093
     ],
-    "fetched_at": "2026-05-11T17:39:48.560154Z"
+    "fetched_at": "2026-05-11T17:51:42.631333Z"
   },
   {
     "ticker": "SPM.MI",
@@ -3390,7 +3390,7 @@
       0.1093,
       0.0912
     ],
-    "fetched_at": "2026-05-11T17:39:48.757708Z"
+    "fetched_at": "2026-05-11T17:51:42.833035Z"
   },
   {
     "ticker": "HOT.DE",
@@ -3429,7 +3429,7 @@
       3.3866,
       8.8902
     ],
-    "fetched_at": "2026-05-11T17:39:49.307944Z"
+    "fetched_at": "2026-05-11T17:51:43.425036Z"
   },
   {
     "ticker": "RWE.DE",
@@ -3468,7 +3468,7 @@
       0.3056,
       0.1215
     ],
-    "fetched_at": "2026-05-11T17:39:50.280946Z"
+    "fetched_at": "2026-05-11T17:51:44.163257Z"
   },
   {
     "ticker": "VWS.CO",
@@ -3507,16 +3507,16 @@
       1.0377,
       1.134
     ],
-    "fetched_at": "2026-05-11T17:39:55.987028Z"
+    "fetched_at": "2026-05-11T17:51:50.322098Z"
   },
   {
     "ticker": "086790.KS",
     "name": "HANA FINANCIAL",
     "price": 125375.45,
     "chg_pct": -1.09,
-    "macd": 8971.8631,
-    "signal": 8356.992,
-    "histogram": 614.8711,
+    "macd": 8971.863,
+    "signal": 8356.9919,
+    "histogram": 614.8712,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3525,28 +3525,28 @@
     "ft_required": 2,
     "score": 6,
     "hist_series": [
-      -236.6814,
-      -311.2279,
-      -417.0052,
-      -285.6028,
+      -236.6815,
+      -311.2285,
+      -417.0055,
+      -285.603,
       63.2992,
-      173.4725,
-      1097.5972,
-      2387.0976,
-      3250.719,
-      2968.8733,
-      1927.5835,
-      1015.7906,
+      173.4731,
+      1097.5976,
+      2387.0979,
+      3250.7192,
+      2968.8729,
+      1927.5833,
+      1015.7905,
       591.1732,
       43.7424,
-      -419.2421,
-      -139.9427,
-      223.4311,
-      354.2921,
-      635.3524,
-      614.8711
+      -419.242,
+      -139.9426,
+      223.4312,
+      354.2923,
+      635.3525,
+      614.8712
     ],
-    "fetched_at": "2026-05-11T17:39:56.536671Z"
+    "fetched_at": "2026-05-11T17:51:51.189638Z"
   },
   {
     "ticker": "ENX.PA",
@@ -3585,16 +3585,16 @@
       1.8025,
       1.2092
     ],
-    "fetched_at": "2026-05-11T17:39:57.045158Z"
+    "fetched_at": "2026-05-11T17:51:51.783405Z"
   },
   {
     "ticker": "C",
     "name": "CITIGROUP",
-    "price": 126.81,
-    "chg_pct": 1.48,
-    "macd": 6.4329,
-    "signal": 5.7361,
-    "histogram": 0.6968,
+    "price": 126.54,
+    "chg_pct": 1.27,
+    "macd": 6.4118,
+    "signal": 5.7319,
+    "histogram": 0.6799,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3622,9 +3622,9 @@
       0.863,
       0.9436,
       0.7756,
-      0.6968
+      0.6799
     ],
-    "fetched_at": "2026-05-11T17:39:57.361312Z"
+    "fetched_at": "2026-05-11T17:51:51.970992Z"
   },
   {
     "ticker": "LSEG.L",
@@ -3663,16 +3663,16 @@
       207.0441,
       160.6074
     ],
-    "fetched_at": "2026-05-11T17:39:57.536247Z"
+    "fetched_at": "2026-05-11T17:51:52.193600Z"
   },
   {
     "ticker": "TSN",
     "name": "TYSON FOODS",
-    "price": 66.62,
-    "chg_pct": -2.57,
-    "macd": 2.421,
-    "signal": 2.205,
-    "histogram": 0.216,
+    "price": 66.57,
+    "chg_pct": -2.65,
+    "macd": 2.4166,
+    "signal": 2.2041,
+    "histogram": 0.2124,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3700,9 +3700,9 @@
       0.1071,
       0.0062,
       0.2234,
-      0.216
+      0.2124
     ],
-    "fetched_at": "2026-05-11T17:40:00.567536Z"
+    "fetched_at": "2026-05-11T17:51:54.585617Z"
   },
   {
     "ticker": "005930.KS",
@@ -3710,7 +3710,7 @@
     "price": 268500.0,
     "chg_pct": 21.77,
     "macd": 33007.67,
-    "signal": 28647.8294,
+    "signal": 28647.8293,
     "histogram": 4359.8407,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
@@ -3724,24 +3724,24 @@
       2102.4996,
       3089.9485,
       4072.4246,
-      4564.304,
+      4564.3041,
       5043.6657,
       4822.5922,
       5723.3999,
       6394.6192,
       7986.6776,
       6570.6227,
-      4831.3825,
+      4831.3826,
       4281.667,
       2254.8395,
       1020.9166,
-      1245.9798,
+      1245.9799,
       1720.9114,
       1908.8216,
       1743.0873,
       4359.8407
     ],
-    "fetched_at": "2026-05-11T17:40:00.904004Z"
+    "fetched_at": "2026-05-11T17:51:54.918412Z"
   },
   {
     "ticker": "TGS.OL",
@@ -3780,16 +3780,16 @@
       3.3287,
       3.1563
     ],
-    "fetched_at": "2026-05-11T17:40:03.066783Z"
+    "fetched_at": "2026-05-11T17:51:57.270326Z"
   },
   {
     "ticker": "ARM",
     "name": "Arm Holdings",
-    "price": 212.06,
-    "chg_pct": -0.57,
-    "macd": 20.0559,
-    "signal": 9.2253,
-    "histogram": 10.8306,
+    "price": 212.38,
+    "chg_pct": -0.42,
+    "macd": 20.0815,
+    "signal": 9.2304,
+    "histogram": 10.851,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3817,18 +3817,18 @@
       10.3617,
       11.3587,
       11.4883,
-      10.8306
+      10.851
     ],
-    "fetched_at": "2026-05-11T17:40:04.097903Z"
+    "fetched_at": "2026-05-11T17:51:58.221076Z"
   },
   {
     "ticker": "KLAC",
     "name": "KLA",
-    "price": 1877.54,
-    "chg_pct": 0.45,
-    "macd": 176.8143,
-    "signal": 152.0069,
-    "histogram": 24.8074,
+    "price": 1863.05,
+    "chg_pct": -0.33,
+    "macd": 175.6584,
+    "signal": 151.7757,
+    "histogram": 23.8826,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3856,18 +3856,18 @@
       30.7836,
       23.5555,
       25.6408,
-      24.8074
+      23.8826
     ],
-    "fetched_at": "2026-05-11T17:40:05.480082Z"
+    "fetched_at": "2026-05-11T17:51:59.722263Z"
   },
   {
     "ticker": "MPWR",
     "name": "Monolithic Power",
-    "price": 1639.31,
-    "chg_pct": 2.4,
-    "macd": 171.2525,
-    "signal": 122.1206,
-    "histogram": 49.1318,
+    "price": 1638.63,
+    "chg_pct": 2.36,
+    "macd": 171.1984,
+    "signal": 122.1098,
+    "histogram": 49.0886,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3895,18 +3895,18 @@
       42.4855,
       48.1994,
       49.4733,
-      49.1318
+      49.0886
     ],
-    "fetched_at": "2026-05-11T17:40:06.100822Z"
+    "fetched_at": "2026-05-11T17:52:00.233648Z"
   },
   {
     "ticker": "MRVL",
     "name": "Marvell",
-    "price": 171.42,
-    "chg_pct": 0.76,
-    "macd": 21.8529,
-    "signal": 12.8508,
-    "histogram": 9.0021,
+    "price": 170.46,
+    "chg_pct": 0.19,
+    "macd": 21.7763,
+    "signal": 12.8355,
+    "histogram": 8.9409,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -3934,9 +3934,9 @@
       7.7528,
       8.7834,
       9.2239,
-      9.0021
+      8.9409
     ],
-    "fetched_at": "2026-05-11T17:40:06.337300Z"
+    "fetched_at": "2026-05-11T17:52:00.478627Z"
   },
   {
     "ticker": "6963.T",
@@ -3960,7 +3960,7 @@
       4.8524,
       27.2209,
       36.3526,
-      27.2859,
+      27.286,
       18.3078,
       19.9143,
       32.8382,
@@ -3975,16 +3975,16 @@
       62.3451,
       64.9493
     ],
-    "fetched_at": "2026-05-11T17:40:07.396050Z"
+    "fetched_at": "2026-05-11T17:52:01.454826Z"
   },
   {
     "ticker": "TSM",
     "name": "TSMC",
-    "price": 405.3,
-    "chg_pct": -1.55,
-    "macd": 29.4196,
-    "signal": 25.8649,
-    "histogram": 3.5547,
+    "price": 405.06,
+    "chg_pct": -1.61,
+    "macd": 29.4001,
+    "signal": 25.861,
+    "histogram": 3.5391,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -4012,9 +4012,9 @@
       1.4414,
       2.4567,
       3.639,
-      3.5547
+      3.5391
     ],
-    "fetched_at": "2026-05-11T17:40:09.721108Z"
+    "fetched_at": "2026-05-11T17:52:03.553968Z"
   },
   {
     "ticker": "ALI1.F",
@@ -4053,7 +4053,7 @@
       0.4264,
       0.24
     ],
-    "fetched_at": "2026-05-11T17:40:10.797873Z"
+    "fetched_at": "2026-05-11T17:52:04.892634Z"
   },
   {
     "ticker": "REB.F",
@@ -4092,16 +4092,16 @@
       0.0054,
       0.0048
     ],
-    "fetched_at": "2026-05-11T17:40:12.301704Z"
+    "fetched_at": "2026-05-11T17:52:06.183016Z"
   },
   {
     "ticker": "UAMY",
     "name": "United States Antimony",
     "price": 10.66,
-    "chg_pct": 0.05,
-    "macd": 1.0713,
-    "signal": 0.9214,
-    "histogram": 0.1499,
+    "chg_pct": -0.03,
+    "macd": 1.0706,
+    "signal": 0.9213,
+    "histogram": 0.1494,
     "momentum": "Strong Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -4129,9 +4129,9 @@
       0.0476,
       0.1978,
       0.1789,
-      0.1499
+      0.1494
     ],
-    "fetched_at": "2026-05-11T17:40:12.613231Z"
+    "fetched_at": "2026-05-11T17:52:06.469150Z"
   },
   {
     "ticker": "SREN.SW",
@@ -4170,7 +4170,7 @@
       1.0529,
       0.8527
     ],
-    "fetched_at": "2026-05-11T17:39:28.813644Z"
+    "fetched_at": "2026-05-11T17:51:21.366395Z"
   },
   {
     "ticker": "UKW.L",
@@ -4209,7 +4209,7 @@
       1.0438,
       0.9382
     ],
-    "fetched_at": "2026-05-11T17:39:29.544240Z"
+    "fetched_at": "2026-05-11T17:51:21.794330Z"
   },
   {
     "ticker": "BON",
@@ -4248,7 +4248,7 @@
       0.1305,
       0.1219
     ],
-    "fetched_at": "2026-05-11T17:39:32.390563Z"
+    "fetched_at": "2026-05-11T17:51:24.808908Z"
   },
   {
     "ticker": "9618.HK",
@@ -4287,7 +4287,7 @@
       1.8781,
       1.8875
     ],
-    "fetched_at": "2026-05-11T17:39:39.572181Z"
+    "fetched_at": "2026-05-11T17:51:31.677969Z"
   },
   {
     "ticker": "CHF=X",
@@ -4326,7 +4326,7 @@
       0.0012,
       0.0006
     ],
-    "fetched_at": "2026-05-11T17:39:45.399794Z"
+    "fetched_at": "2026-05-11T17:51:38.146199Z"
   },
   {
     "ticker": "ORSTED.CO",
@@ -4365,16 +4365,16 @@
       6.0485,
       5.4641
     ],
-    "fetched_at": "2026-05-11T17:39:50.870780Z"
+    "fetched_at": "2026-05-11T17:51:44.713697Z"
   },
   {
     "ticker": "TASK",
     "name": "TASKUS",
-    "price": 6.01,
-    "chg_pct": -6.67,
-    "macd": -0.5928,
-    "signal": -0.6674,
-    "histogram": 0.0746,
+    "price": 5.99,
+    "chg_pct": -7.14,
+    "macd": -0.5952,
+    "signal": -0.6679,
+    "histogram": 0.0727,
     "momentum": "Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -4402,18 +4402,18 @@
       0.1009,
       0.1052,
       0.1027,
-      0.0746
+      0.0727
     ],
-    "fetched_at": "2026-05-11T17:39:56.202574Z"
+    "fetched_at": "2026-05-11T17:51:50.605730Z"
   },
   {
     "ticker": "AIG",
     "name": "AIG",
-    "price": 75.72,
-    "chg_pct": -0.84,
-    "macd": -0.468,
-    "signal": -0.5108,
-    "histogram": 0.0427,
+    "price": 75.64,
+    "chg_pct": -0.94,
+    "macd": -0.474,
+    "signal": -0.5119,
+    "histogram": 0.038,
     "momentum": "Bullish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -4441,18 +4441,18 @@
       -0.0436,
       0.1458,
       0.1081,
-      0.0427
+      0.038
     ],
-    "fetched_at": "2026-05-11T17:39:58.120577Z"
+    "fetched_at": "2026-05-11T17:51:52.789246Z"
   },
   {
     "ticker": "XBI",
     "name": "SPDR S&P Biotech ETF",
-    "price": 135.57,
-    "chg_pct": 0.64,
-    "macd": 6.111,
-    "signal": 6.0883,
-    "histogram": 0.0227,
+    "price": 135.3,
+    "chg_pct": 0.44,
+    "macd": 6.0895,
+    "signal": 6.084,
+    "histogram": 0.0054,
     "momentum": "Bullish Momentum",
     "confirmed": false,
     "hh_confirmed": false,
@@ -4480,9 +4480,9 @@
       -0.0,
       -0.173,
       -0.0541,
-      0.0227
+      0.0054
     ],
-    "fetched_at": "2026-05-11T17:39:37.419937Z"
+    "fetched_at": "2026-05-11T17:51:29.664752Z"
   },
   {
     "ticker": "EURUSD=X",
@@ -4521,7 +4521,7 @@
       -0.0005,
       0.0002
     ],
-    "fetched_at": "2026-05-11T17:39:44.885577Z"
+    "fetched_at": "2026-05-11T17:51:37.717060Z"
   },
   {
     "ticker": "ISS.CO",
@@ -4560,7 +4560,7 @@
       -0.7431,
       0.9481
     ],
-    "fetched_at": "2026-05-11T17:39:54.725019Z"
+    "fetched_at": "2026-05-11T17:51:48.891637Z"
   },
   {
     "ticker": "0001.HK",
@@ -4599,7 +4599,7 @@
       -0.0245,
       0.5071
     ],
-    "fetched_at": "2026-05-11T17:39:55.280668Z"
+    "fetched_at": "2026-05-11T17:51:49.527359Z"
   },
   {
     "ticker": "BRAV.ST",
@@ -4638,7 +4638,7 @@
       -0.1275,
       0.7569
     ],
-    "fetched_at": "2026-05-11T17:39:55.634869Z"
+    "fetched_at": "2026-05-11T17:51:49.898415Z"
   },
   {
     "ticker": "TIETO.HE",
@@ -4677,7 +4677,7 @@
       -0.0478,
       0.016
     ],
-    "fetched_at": "2026-05-11T17:40:01.366784Z"
+    "fetched_at": "2026-05-11T17:51:55.286887Z"
   },
   {
     "ticker": "1113.HK",
@@ -4716,16 +4716,16 @@
       -0.0441,
       0.1256
     ],
-    "fetched_at": "2026-05-11T17:40:01.514223Z"
+    "fetched_at": "2026-05-11T17:51:55.980814Z"
   },
   {
     "ticker": "UROY",
     "name": "URANIUM ROYALTY",
-    "price": 4.39,
-    "chg_pct": 9.87,
-    "macd": 0.0809,
-    "signal": 0.0724,
-    "histogram": 0.0085,
+    "price": 4.41,
+    "chg_pct": 10.25,
+    "macd": 0.0821,
+    "signal": 0.0726,
+    "histogram": 0.0095,
     "momentum": "Bullish Momentum",
     "confirmed": false,
     "hh_confirmed": false,
@@ -4753,9 +4753,9 @@
       -0.0822,
       -0.0627,
       -0.0351,
-      0.0085
+      0.0095
     ],
-    "fetched_at": "2026-05-11T17:40:12.763410Z"
+    "fetched_at": "2026-05-11T17:52:06.612482Z"
   },
   {
     "ticker": "DGE.L",
@@ -4794,7 +4794,7 @@
       -2.7566,
       4.5577
     ],
-    "fetched_at": "2026-05-11T17:39:40.143713Z"
+    "fetched_at": "2026-05-11T17:51:32.253696Z"
   },
   {
     "ticker": "DOKA.SW",
@@ -4833,7 +4833,7 @@
       -0.1031,
       0.2405
     ],
-    "fetched_at": "2026-05-11T17:39:40.339930Z"
+    "fetched_at": "2026-05-11T17:51:32.465794Z"
   },
   {
     "ticker": "HSBA.L",
@@ -4872,7 +4872,7 @@
       1.5112,
       -0.8623
     ],
-    "fetched_at": "2026-05-11T17:39:25.693711Z"
+    "fetched_at": "2026-05-11T17:51:18.452439Z"
   },
   {
     "ticker": "KAP.IL",
@@ -4911,7 +4911,7 @@
       0.2425,
       -0.387
     ],
-    "fetched_at": "2026-05-11T17:39:26.542223Z"
+    "fetched_at": "2026-05-11T17:51:19.099149Z"
   },
   {
     "ticker": "SAND.ST",
@@ -4950,16 +4950,16 @@
       0.1834,
       -1.3276
     ],
-    "fetched_at": "2026-05-11T17:39:35.258327Z"
+    "fetched_at": "2026-05-11T17:51:27.500738Z"
   },
   {
     "ticker": "FLR",
     "name": "FLUOR",
-    "price": 43.1,
-    "chg_pct": -0.5,
-    "macd": 0.5066,
-    "signal": 0.8227,
-    "histogram": -0.3162,
+    "price": 43.19,
+    "chg_pct": -0.28,
+    "macd": 0.5141,
+    "signal": 0.8243,
+    "histogram": -0.3101,
     "momentum": "Unconfirmed Bearish (1/2W)",
     "confirmed": false,
     "hh_confirmed": false,
@@ -4987,18 +4987,18 @@
       0.2049,
       0.483,
       0.0054,
-      -0.3162
+      -0.3101
     ],
-    "fetched_at": "2026-05-11T17:39:47.588673Z"
+    "fetched_at": "2026-05-11T17:51:41.516243Z"
   },
   {
     "ticker": "B3SA3.SA",
     "name": "B3 BRASIL",
-    "price": 17.72,
-    "chg_pct": -1.17,
-    "macd": 1.1856,
-    "signal": 1.2587,
-    "histogram": -0.073,
+    "price": 17.73,
+    "chg_pct": -1.12,
+    "macd": 1.1864,
+    "signal": 1.2588,
+    "histogram": -0.0724,
     "momentum": "Unconfirmed Bearish (1/2W)",
     "confirmed": false,
     "hh_confirmed": false,
@@ -5026,9 +5026,9 @@
       0.2052,
       0.0987,
       0.0088,
-      -0.073
+      -0.0724
     ],
-    "fetched_at": "2026-05-11T17:39:57.903451Z"
+    "fetched_at": "2026-05-11T17:51:52.559447Z"
   },
   {
     "ticker": "SHELL.AS",
@@ -5067,7 +5067,7 @@
       0.2472,
       -0.0128
     ],
-    "fetched_at": "2026-05-11T17:40:02.899430Z"
+    "fetched_at": "2026-05-11T17:51:57.105163Z"
   },
   {
     "ticker": "GLEN.L",
@@ -5106,7 +5106,7 @@
       0.91,
       -0.1405
     ],
-    "fetched_at": "2026-05-11T17:40:11.687802Z"
+    "fetched_at": "2026-05-11T17:52:05.532568Z"
   },
   {
     "ticker": "0006.HK",
@@ -5145,7 +5145,7 @@
       0.0588,
       -0.01
     ],
-    "fetched_at": "2026-05-11T17:40:13.523460Z"
+    "fetched_at": "2026-05-11T17:52:07.288140Z"
   },
   {
     "ticker": "VCT.L",
@@ -5184,7 +5184,7 @@
       0.8871,
       -0.2723
     ],
-    "fetched_at": "2026-05-11T17:39:29.738576Z"
+    "fetched_at": "2026-05-11T17:51:22.014679Z"
   },
   {
     "ticker": "LIFCO-B.ST",
@@ -5223,7 +5223,7 @@
       0.0207,
       -0.5023
     ],
-    "fetched_at": "2026-05-11T17:39:34.377179Z"
+    "fetched_at": "2026-05-11T17:51:26.736773Z"
   },
   {
     "ticker": "LGEN.L",
@@ -5262,7 +5262,7 @@
       -0.7461,
       -0.9952
     ],
-    "fetched_at": "2026-05-11T17:39:26.985236Z"
+    "fetched_at": "2026-05-11T17:51:19.533729Z"
   },
   {
     "ticker": "OSB.L",
@@ -5301,16 +5301,16 @@
       -9.5054,
       -9.539
     ],
-    "fetched_at": "2026-05-11T17:39:27.667950Z"
+    "fetched_at": "2026-05-11T17:51:20.263237Z"
   },
   {
     "ticker": "FNV",
     "name": "FRANCO-NEVADA",
-    "price": 236.6,
-    "chg_pct": 1.93,
-    "macd": 8.2055,
-    "signal": 12.4786,
-    "histogram": -4.2732,
+    "price": 236.72,
+    "chg_pct": 1.99,
+    "macd": 8.2154,
+    "signal": 12.4806,
+    "histogram": -4.2652,
     "momentum": "Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -5338,9 +5338,9 @@
       -1.6484,
       -3.4683,
       -4.1984,
-      -4.2732
+      -4.2652
     ],
-    "fetched_at": "2026-05-11T17:39:30.377903Z"
+    "fetched_at": "2026-05-11T17:51:22.640702Z"
   },
   {
     "ticker": "ALC.SW",
@@ -5379,7 +5379,7 @@
       -0.0882,
       -0.7465
     ],
-    "fetched_at": "2026-05-11T17:39:31.191183Z"
+    "fetched_at": "2026-05-11T17:51:23.464915Z"
   },
   {
     "ticker": "BAYN.DE",
@@ -5418,7 +5418,7 @@
       -0.79,
       -0.8836
     ],
-    "fetched_at": "2026-05-11T17:39:31.983398Z"
+    "fetched_at": "2026-05-11T17:51:24.451679Z"
   },
   {
     "ticker": "CEVI.ST",
@@ -5457,7 +5457,7 @@
       -1.9358,
       -2.4993
     ],
-    "fetched_at": "2026-05-11T17:39:32.560601Z"
+    "fetched_at": "2026-05-11T17:51:24.965625Z"
   },
   {
     "ticker": "DG.PA",
@@ -5496,7 +5496,7 @@
       -0.0233,
       -0.0701
     ],
-    "fetched_at": "2026-05-11T17:39:32.759926Z"
+    "fetched_at": "2026-05-11T17:51:25.178248Z"
   },
   {
     "ticker": "DSV.CO",
@@ -5535,7 +5535,7 @@
       -11.1969,
       -18.2303
     ],
-    "fetched_at": "2026-05-11T17:39:32.971564Z"
+    "fetched_at": "2026-05-11T17:51:25.359684Z"
   },
   {
     "ticker": "INDT.ST",
@@ -5574,7 +5574,7 @@
       -0.0195,
       -0.9789
     ],
-    "fetched_at": "2026-05-11T17:39:33.968932Z"
+    "fetched_at": "2026-05-11T17:51:26.365031Z"
   },
   {
     "ticker": "TOM.OL",
@@ -5613,16 +5613,16 @@
       -1.6486,
       -1.7683
     ],
-    "fetched_at": "2026-05-11T17:39:36.057223Z"
+    "fetched_at": "2026-05-11T17:51:28.112620Z"
   },
   {
     "ticker": "NU",
     "name": "NU HOLDING",
-    "price": 13.51,
-    "chg_pct": -2.14,
-    "macd": -0.4351,
-    "signal": -0.1754,
-    "histogram": -0.2598,
+    "price": 13.48,
+    "chg_pct": -2.28,
+    "macd": -0.4367,
+    "signal": -0.1757,
+    "histogram": -0.2611,
     "momentum": "Strong Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -5650,9 +5650,9 @@
       -0.266,
       -0.2381,
       -0.2485,
-      -0.2598
+      -0.2611
     ],
-    "fetched_at": "2026-05-11T17:39:42.865429Z"
+    "fetched_at": "2026-05-11T17:51:34.928941Z"
   },
   {
     "ticker": "RBREW.CO",
@@ -5691,7 +5691,7 @@
       -19.2141,
       -20.6411
     ],
-    "fetched_at": "2026-05-11T17:39:43.029876Z"
+    "fetched_at": "2026-05-11T17:51:35.132446Z"
   },
   {
     "ticker": "JPY=X",
@@ -5730,7 +5730,7 @@
       -0.2078,
       -0.3517
     ],
-    "fetched_at": "2026-05-11T17:39:45.269950Z"
+    "fetched_at": "2026-05-11T17:51:38.012062Z"
   },
   {
     "ticker": "BA.L",
@@ -5749,7 +5749,7 @@
     "score": -4,
     "hist_series": [
       -30.3983,
-      -23.8223,
+      -23.8222,
       0.5428,
       17.9332,
       23.8736,
@@ -5769,7 +5769,7 @@
       -12.0955,
       -25.715
     ],
-    "fetched_at": "2026-05-11T17:39:45.759153Z"
+    "fetched_at": "2026-05-11T17:51:39.458560Z"
   },
   {
     "ticker": "RHM.DE",
@@ -5808,16 +5808,16 @@
       -34.4332,
       -41.3687
     ],
-    "fetched_at": "2026-05-11T17:39:47.399299Z"
+    "fetched_at": "2026-05-11T17:51:41.345073Z"
   },
   {
     "ticker": "J",
     "name": "JACOBS SOLUTIONS",
-    "price": 115.8,
-    "chg_pct": -2.22,
-    "macd": -4.8571,
-    "signal": -3.3963,
-    "histogram": -1.4608,
+    "price": 116.68,
+    "chg_pct": -1.48,
+    "macd": -4.7873,
+    "signal": -3.3823,
+    "histogram": -1.4049,
     "momentum": "Strong Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -5845,18 +5845,18 @@
       -1.0668,
       -0.7338,
       -1.1309,
-      -1.4608
+      -1.4049
     ],
-    "fetched_at": "2026-05-11T17:39:47.903049Z"
+    "fetched_at": "2026-05-11T17:51:41.982371Z"
   },
   {
     "ticker": "KBR",
     "name": "KBR",
-    "price": 32.53,
-    "chg_pct": -0.05,
-    "macd": -2.7192,
-    "signal": -2.2603,
-    "histogram": -0.4589,
+    "price": 32.42,
+    "chg_pct": -0.37,
+    "macd": -2.7276,
+    "signal": -2.262,
+    "histogram": -0.4656,
     "momentum": "Strong Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -5884,18 +5884,18 @@
       -0.3442,
       -0.1908,
       -0.3792,
-      -0.4589
+      -0.4656
     ],
-    "fetched_at": "2026-05-11T17:39:48.224586Z"
+    "fetched_at": "2026-05-11T17:51:42.297260Z"
   },
   {
     "ticker": "NEE",
     "name": "NEXTERA ENERGY",
-    "price": 95.62,
-    "chg_pct": 2.71,
-    "macd": 3.905,
-    "signal": 3.9455,
-    "histogram": -0.0405,
+    "price": 95.71,
+    "chg_pct": 2.8,
+    "macd": 3.9123,
+    "signal": 3.9469,
+    "histogram": -0.0347,
     "momentum": "Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -5923,9 +5923,9 @@
       0.0984,
       0.2028,
       -0.0242,
-      -0.0405
+      -0.0347
     ],
-    "fetched_at": "2026-05-11T17:39:49.813436Z"
+    "fetched_at": "2026-05-11T17:51:43.777978Z"
   },
   {
     "ticker": "ENGI.PA",
@@ -5964,7 +5964,7 @@
       -0.0153,
       -0.0603
     ],
-    "fetched_at": "2026-05-11T17:39:50.046580Z"
+    "fetched_at": "2026-05-11T17:51:43.958132Z"
   },
   {
     "ticker": "IBE.MC",
@@ -6003,16 +6003,16 @@
       -0.0636,
       -0.1083
     ],
-    "fetched_at": "2026-05-11T17:39:50.707513Z"
+    "fetched_at": "2026-05-11T17:51:44.544884Z"
   },
   {
     "ticker": "VMC",
     "name": "VULCAN MATERIALS",
-    "price": 281.7,
-    "chg_pct": -0.71,
-    "macd": -1.2897,
-    "signal": -0.4138,
-    "histogram": -0.876,
+    "price": 281.12,
+    "chg_pct": -0.92,
+    "macd": -1.3364,
+    "signal": -0.4231,
+    "histogram": -0.9133,
     "momentum": "Strong Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -6040,18 +6040,18 @@
       -1.297,
       -0.3581,
       -0.6184,
-      -0.876
+      -0.9133
     ],
-    "fetched_at": "2026-05-11T17:39:51.596831Z"
+    "fetched_at": "2026-05-11T17:51:45.355253Z"
   },
   {
     "ticker": "MLM",
     "name": "MARTIN MARIETTA",
-    "price": 586.01,
-    "chg_pct": -0.74,
-    "macd": -5.5446,
-    "signal": 0.1986,
-    "histogram": -5.7432,
+    "price": 585.24,
+    "chg_pct": -0.87,
+    "macd": -5.6056,
+    "signal": 0.1864,
+    "histogram": -5.792,
     "momentum": "Strong Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -6079,18 +6079,18 @@
       -5.3504,
       -4.4629,
       -5.2381,
-      -5.7432
+      -5.792
     ],
-    "fetched_at": "2026-05-11T17:39:51.835558Z"
+    "fetched_at": "2026-05-11T17:51:45.528565Z"
   },
   {
     "ticker": "DE",
     "name": "DEERE & COMPANY",
-    "price": 581.77,
-    "chg_pct": 1.21,
-    "macd": 21.9739,
-    "signal": 25.2121,
-    "histogram": -3.2382,
+    "price": 582.39,
+    "chg_pct": 1.31,
+    "macd": 22.0236,
+    "signal": 25.2221,
+    "histogram": -3.1985,
     "momentum": "Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -6118,9 +6118,9 @@
       -1.2549,
       -2.1891,
       -3.0586,
-      -3.2382
+      -3.1985
     ],
-    "fetched_at": "2026-05-11T17:39:52.027267Z"
+    "fetched_at": "2026-05-11T17:51:45.764219Z"
   },
   {
     "ticker": "6301.T",
@@ -6159,7 +6159,7 @@
       -50.3298,
       -64.9616
     ],
-    "fetched_at": "2026-05-11T17:39:52.226628Z"
+    "fetched_at": "2026-05-11T17:51:45.936646Z"
   },
   {
     "ticker": "METSO.HE",
@@ -6198,7 +6198,7 @@
       -0.2649,
       -0.2759
     ],
-    "fetched_at": "2026-05-11T17:39:52.395291Z"
+    "fetched_at": "2026-05-11T17:51:46.152609Z"
   },
   {
     "ticker": "WEIR.L",
@@ -6237,16 +6237,16 @@
       -56.4494,
       -73.292
     ],
-    "fetched_at": "2026-05-11T17:39:52.604874Z"
+    "fetched_at": "2026-05-11T17:51:46.432524Z"
   },
   {
     "ticker": "LMT",
     "name": "LOCKHEED MARTIN",
-    "price": 514.16,
-    "chg_pct": 1.51,
-    "macd": 4.8636,
-    "signal": 24.3294,
-    "histogram": -19.4658,
+    "price": 515.62,
+    "chg_pct": 1.8,
+    "macd": 4.98,
+    "signal": 24.3527,
+    "histogram": -19.3726,
     "momentum": "Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -6274,18 +6274,18 @@
       -12.2129,
       -16.5365,
       -19.0888,
-      -19.4658
+      -19.3726
     ],
-    "fetched_at": "2026-05-11T17:39:52.814587Z"
+    "fetched_at": "2026-05-11T17:51:46.700595Z"
   },
   {
     "ticker": "NOC",
     "name": "NORTHROP GRUMMAN",
-    "price": 550.96,
-    "chg_pct": 0.26,
-    "macd": -5.2382,
-    "signal": 17.9319,
-    "histogram": -23.1701,
+    "price": 551.93,
+    "chg_pct": 0.44,
+    "macd": -5.1604,
+    "signal": 17.9475,
+    "histogram": -23.1079,
     "momentum": "Strong Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -6313,9 +6313,9 @@
       -13.7236,
       -18.5209,
       -22.0117,
-      -23.1701
+      -23.1079
     ],
-    "fetched_at": "2026-05-11T17:39:53.004639Z"
+    "fetched_at": "2026-05-11T17:51:46.926633Z"
   },
   {
     "ticker": "HO.PA",
@@ -6354,7 +6354,7 @@
       -1.9264,
       -2.8961
     ],
-    "fetched_at": "2026-05-11T17:39:53.399601Z"
+    "fetched_at": "2026-05-11T17:51:47.417647Z"
   },
   {
     "ticker": "LDO.MI",
@@ -6393,16 +6393,16 @@
       -0.851,
       -0.9722
     ],
-    "fetched_at": "2026-05-11T17:39:53.559952Z"
+    "fetched_at": "2026-05-11T17:51:47.669628Z"
   },
   {
     "ticker": "PH",
     "name": "PARKER-HANNIFIN",
-    "price": 878.24,
-    "chg_pct": 0.16,
-    "macd": 19.8684,
-    "signal": 35.0261,
-    "histogram": -15.1577,
+    "price": 878.7,
+    "chg_pct": 0.21,
+    "macd": 19.9053,
+    "signal": 35.0335,
+    "histogram": -15.1282,
     "momentum": "Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -6430,18 +6430,18 @@
       -4.6149,
       -9.9903,
       -13.4367,
-      -15.1577
+      -15.1282
     ],
-    "fetched_at": "2026-05-11T17:39:53.962442Z"
+    "fetched_at": "2026-05-11T17:51:48.140500Z"
   },
   {
     "ticker": "ITW",
     "name": "ILLINOIS TOOL WORKS",
-    "price": 253.6,
-    "chg_pct": -0.45,
-    "macd": 0.8013,
-    "signal": 3.4324,
-    "histogram": -2.6311,
+    "price": 253.75,
+    "chg_pct": -0.4,
+    "macd": 0.8128,
+    "signal": 3.4347,
+    "histogram": -2.6218,
     "momentum": "Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -6469,18 +6469,18 @@
       -0.9939,
       -1.8158,
       -2.3236,
-      -2.6311
+      -2.6218
     ],
-    "fetched_at": "2026-05-11T17:39:54.161890Z"
+    "fetched_at": "2026-05-11T17:51:48.372289Z"
   },
   {
     "ticker": "105560.KS",
     "name": "KB FINANCIAL",
     "price": 160536.86,
     "chg_pct": 0.75,
-    "macd": 10301.2106,
-    "signal": 10441.6199,
-    "histogram": -140.4093,
+    "macd": 10301.211,
+    "signal": 10441.6203,
+    "histogram": -140.4094,
     "momentum": "Bearish Crossover ↓↓",
     "confirmed": true,
     "hh_confirmed": true,
@@ -6489,15 +6489,15 @@
     "ft_required": 2,
     "score": -4,
     "hist_series": [
-      -0.4511,
-      -302.4695,
-      -325.9805,
-      -110.2003,
-      269.6029,
-      411.6516,
-      1306.2029,
-      2904.9235,
-      3743.8598,
+      -0.4506,
+      -302.4691,
+      -325.9801,
+      -110.2,
+      269.6032,
+      411.6518,
+      1306.2031,
+      2904.9237,
+      3743.8599,
       3382.618,
       2256.7823,
       1439.1716,
@@ -6507,10 +6507,10 @@
       -67.4471,
       204.6168,
       -41.8649,
-      -93.4767,
-      -140.4093
+      -93.4768,
+      -140.4094
     ],
-    "fetched_at": "2026-05-11T17:39:56.894820Z"
+    "fetched_at": "2026-05-11T17:51:51.603433Z"
   },
   {
     "ticker": "003690.KS",
@@ -6549,7 +6549,7 @@
       -76.6095,
       -95.3148
     ],
-    "fetched_at": "2026-05-11T17:39:57.727218Z"
+    "fetched_at": "2026-05-11T17:51:52.377575Z"
   },
   {
     "ticker": "UPM.HE",
@@ -6588,7 +6588,7 @@
       -0.0209,
       -0.0578
     ],
-    "fetched_at": "2026-05-11T17:39:58.563100Z"
+    "fetched_at": "2026-05-11T17:51:53.189695Z"
   },
   {
     "ticker": "PUBLI.OL",
@@ -6627,7 +6627,7 @@
       -0.3522,
       -0.4952
     ],
-    "fetched_at": "2026-05-11T17:40:01.709055Z"
+    "fetched_at": "2026-05-11T17:51:56.164990Z"
   },
   {
     "ticker": "SVEAF.ST",
@@ -6666,7 +6666,7 @@
       -0.3948,
       -0.3956
     ],
-    "fetched_at": "2026-05-11T17:40:02.058941Z"
+    "fetched_at": "2026-05-11T17:51:56.447364Z"
   },
   {
     "ticker": "TEL.OL",
@@ -6705,7 +6705,7 @@
       -1.4459,
       -1.8852
     ],
-    "fetched_at": "2026-05-11T17:40:02.235989Z"
+    "fetched_at": "2026-05-11T17:51:56.620735Z"
   },
   {
     "ticker": "ASHM.L",
@@ -6744,7 +6744,7 @@
       -3.1936,
       -2.8013
     ],
-    "fetched_at": "2026-05-11T17:39:24.427086Z"
+    "fetched_at": "2026-05-11T17:51:16.359337Z"
   },
   {
     "ticker": "AV.L",
@@ -6783,7 +6783,7 @@
       -2.2802,
       -2.3104
     ],
-    "fetched_at": "2026-05-11T17:39:24.634535Z"
+    "fetched_at": "2026-05-11T17:51:16.572878Z"
   },
   {
     "ticker": "BATS.L",
@@ -6813,7 +6813,7 @@
       17.9893,
       -2.7655,
       -1.9853,
-      -16.1387,
+      -16.1388,
       -23.049,
       -23.9439,
       -28.1538,
@@ -6822,7 +6822,7 @@
       -38.6586,
       -39.6366
     ],
-    "fetched_at": "2026-05-11T17:39:24.823179Z"
+    "fetched_at": "2026-05-11T17:51:16.797955Z"
   },
   {
     "ticker": "DNLM.L",
@@ -6861,7 +6861,7 @@
       -13.3786,
       -11.9599
     ],
-    "fetched_at": "2026-05-11T17:39:24.987084Z"
+    "fetched_at": "2026-05-11T17:51:17.031752Z"
   },
   {
     "ticker": "ENOG.L",
@@ -6900,7 +6900,7 @@
       -1.6056,
       -1.6016
     ],
-    "fetched_at": "2026-05-11T17:39:25.142237Z"
+    "fetched_at": "2026-05-11T17:51:17.193991Z"
   },
   {
     "ticker": "GCP.L",
@@ -6927,7 +6927,7 @@
       0.4687,
       0.4807,
       0.5011,
-      0.4786,
+      0.4787,
       0.3338,
       0.2083,
       0.031,
@@ -6939,7 +6939,7 @@
       -0.1401,
       -0.1241
     ],
-    "fetched_at": "2026-05-11T17:39:25.502377Z"
+    "fetched_at": "2026-05-11T17:51:18.274998Z"
   },
   {
     "ticker": "LAND.L",
@@ -6978,7 +6978,7 @@
       -3.6792,
       -2.9993
     ],
-    "fetched_at": "2026-05-11T17:39:26.784315Z"
+    "fetched_at": "2026-05-11T17:51:19.338360Z"
   },
   {
     "ticker": "MNG.L",
@@ -7017,7 +7017,7 @@
       -1.8343,
       -1.4049
     ],
-    "fetched_at": "2026-05-11T17:39:27.140277Z"
+    "fetched_at": "2026-05-11T17:51:19.676290Z"
   },
   {
     "ticker": "ZIG.L",
@@ -7056,16 +7056,16 @@
       -0.6996,
       -0.0065
     ],
-    "fetched_at": "2026-05-11T17:39:30.208351Z"
+    "fetched_at": "2026-05-11T17:51:22.432705Z"
   },
   {
     "ticker": "OR",
     "name": "OR ROYALTIES",
-    "price": 39.62,
-    "chg_pct": 3.12,
-    "macd": 1.0262,
-    "signal": 1.5818,
-    "histogram": -0.5557,
+    "price": 39.54,
+    "chg_pct": 2.92,
+    "macd": 1.0198,
+    "signal": 1.5805,
+    "histogram": -0.5608,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -7093,18 +7093,18 @@
       -0.425,
       -0.6371,
       -0.6453,
-      -0.5557
+      -0.5608
     ],
-    "fetched_at": "2026-05-11T17:39:30.543653Z"
+    "fetched_at": "2026-05-11T17:51:22.846664Z"
   },
   {
     "ticker": "RGLD",
     "name": "ROYAL GOLD",
-    "price": 244.18,
-    "chg_pct": 2.21,
-    "macd": 8.1699,
-    "signal": 13.9617,
-    "histogram": -5.7918,
+    "price": 244.06,
+    "chg_pct": 2.16,
+    "macd": 8.16,
+    "signal": 13.9597,
+    "histogram": -5.7998,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -7132,18 +7132,18 @@
       -3.7862,
       -5.5714,
       -6.0215,
-      -5.7918
+      -5.7998
     ],
-    "fetched_at": "2026-05-11T17:39:30.728530Z"
+    "fetched_at": "2026-05-11T17:51:22.998752Z"
   },
   {
     "ticker": "TFPM",
     "name": "TRIPLE FLAG PM",
-    "price": 35.1,
-    "chg_pct": 5.15,
-    "macd": 0.7989,
-    "signal": 1.3958,
-    "histogram": -0.5969,
+    "price": 35.02,
+    "chg_pct": 4.91,
+    "macd": 0.7925,
+    "signal": 1.3945,
+    "histogram": -0.602,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -7171,18 +7171,18 @@
       -0.5745,
       -0.7671,
       -0.7453,
-      -0.5969
+      -0.602
     ],
-    "fetched_at": "2026-05-11T17:39:30.882024Z"
+    "fetched_at": "2026-05-11T17:51:23.146115Z"
   },
   {
     "ticker": "WPM",
     "name": "WHEATON PRECIOUS",
-    "price": 143.28,
-    "chg_pct": 3.19,
-    "macd": 6.9089,
-    "signal": 8.4115,
-    "histogram": -1.5026,
+    "price": 142.71,
+    "chg_pct": 2.78,
+    "macd": 6.8634,
+    "signal": 8.4024,
+    "histogram": -1.539,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -7210,9 +7210,9 @@
       -0.9527,
       -2.0626,
       -1.9042,
-      -1.5026
+      -1.539
     ],
-    "fetched_at": "2026-05-11T17:39:31.044664Z"
+    "fetched_at": "2026-05-11T17:51:23.326426Z"
   },
   {
     "ticker": "ATCO-A.ST",
@@ -7251,7 +7251,7 @@
       -0.5553,
       -0.3025
     ],
-    "fetched_at": "2026-05-11T17:39:31.364425Z"
+    "fetched_at": "2026-05-11T17:51:23.642436Z"
   },
   {
     "ticker": "BAKKA.OL",
@@ -7290,7 +7290,7 @@
       -0.3816,
       -2.6797
     ],
-    "fetched_at": "2026-05-11T17:39:31.785901Z"
+    "fetched_at": "2026-05-11T17:51:24.253383Z"
   },
   {
     "ticker": "BEAN.SW",
@@ -7329,7 +7329,7 @@
       -4.5707,
       -0.9066
     ],
-    "fetched_at": "2026-05-11T17:39:32.182589Z"
+    "fetched_at": "2026-05-11T17:51:24.670408Z"
   },
   {
     "ticker": "ESSITY-B.ST",
@@ -7368,16 +7368,16 @@
       -1.5437,
       -1.2785
     ],
-    "fetched_at": "2026-05-11T17:39:33.116122Z"
+    "fetched_at": "2026-05-11T17:51:25.515540Z"
   },
   {
     "ticker": "FER",
     "name": "FERROVIAL",
-    "price": 70.22,
-    "chg_pct": -0.28,
-    "macd": 2.1025,
-    "signal": 2.319,
-    "histogram": -0.2165,
+    "price": 70.11,
+    "chg_pct": -0.44,
+    "macd": 2.0933,
+    "signal": 2.3172,
+    "histogram": -0.2239,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -7405,9 +7405,9 @@
       -0.337,
       -0.3373,
       -0.2502,
-      -0.2165
+      -0.2239
     ],
-    "fetched_at": "2026-05-11T17:39:33.301335Z"
+    "fetched_at": "2026-05-11T17:51:25.683100Z"
   },
   {
     "ticker": "SKA-B.ST",
@@ -7446,16 +7446,16 @@
       -0.6621,
       -0.516
     ],
-    "fetched_at": "2026-05-11T17:39:35.653984Z"
+    "fetched_at": "2026-05-11T17:51:27.866554Z"
   },
   {
     "ticker": "VEGI",
     "name": "iShares MSCI Agri ETF",
-    "price": 45.92,
-    "chg_pct": 1.6,
-    "macd": 1.4562,
-    "signal": 1.5577,
-    "histogram": -0.1015,
+    "price": 45.94,
+    "chg_pct": 1.64,
+    "macd": 1.4574,
+    "signal": 1.5579,
+    "histogram": -0.1005,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -7483,9 +7483,9 @@
       -0.011,
       -0.0469,
       -0.1034,
-      -0.1015
+      -0.1005
     ],
-    "fetched_at": "2026-05-11T17:39:36.993444Z"
+    "fetched_at": "2026-05-11T17:51:29.197171Z"
   },
   {
     "ticker": "FXPO.L",
@@ -7524,7 +7524,7 @@
       -3.7958,
       -3.7453
     ],
-    "fetched_at": "2026-05-11T17:39:40.515730Z"
+    "fetched_at": "2026-05-11T17:51:32.655236Z"
   },
   {
     "ticker": "RI.PA",
@@ -7563,7 +7563,7 @@
       -0.7045,
       -0.5898
     ],
-    "fetched_at": "2026-05-11T17:39:43.394981Z"
+    "fetched_at": "2026-05-11T17:51:35.924486Z"
   },
   {
     "ticker": "WIE.VI",
@@ -7602,16 +7602,16 @@
       -0.1728,
       -0.0743
     ],
-    "fetched_at": "2026-05-11T17:39:43.892369Z"
+    "fetched_at": "2026-05-11T17:51:36.541180Z"
   },
   {
     "ticker": "GC=F",
     "name": "GOLD",
-    "price": 4727.6,
-    "chg_pct": 0.15,
-    "macd": 148.3131,
-    "signal": 212.412,
-    "histogram": -64.0989,
+    "price": 4731.6,
+    "chg_pct": 0.24,
+    "macd": 148.6322,
+    "signal": 212.4758,
+    "histogram": -63.8436,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -7639,18 +7639,18 @@
       -62.8668,
       -70.2455,
       -67.6493,
-      -64.0989
+      -63.8436
     ],
-    "fetched_at": "2026-05-11T17:39:44.030112Z"
+    "fetched_at": "2026-05-11T17:51:36.715088Z"
   },
   {
     "ticker": "SI=F",
     "name": "SILBER",
-    "price": 86.12,
-    "chg_pct": 7.13,
-    "macd": 5.4708,
-    "signal": 6.4427,
-    "histogram": -0.9718,
+    "price": 86.33,
+    "chg_pct": 7.39,
+    "macd": 5.4876,
+    "signal": 6.446,
+    "histogram": -0.9584,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -7678,9 +7678,9 @@
       -1.8192,
       -1.845,
       -1.5454,
-      -0.9718
+      -0.9584
     ],
-    "fetched_at": "2026-05-11T17:39:44.181905Z"
+    "fetched_at": "2026-05-11T17:51:36.846670Z"
   },
   {
     "ticker": "NG=F",
@@ -7719,7 +7719,46 @@
       -0.0711,
       -0.0428
     ],
-    "fetched_at": "2026-05-11T17:39:44.738754Z"
+    "fetched_at": "2026-05-11T17:51:37.587413Z"
+  },
+  {
+    "ticker": "510050.SS",
+    "name": "CHINA AMC SS50 ETF",
+    "price": 3.08,
+    "chg_pct": 0.42,
+    "macd": 0.0031,
+    "signal": 0.0102,
+    "histogram": -0.0072,
+    "momentum": "Bearish Crossover",
+    "confirmed": true,
+    "hh_confirmed": false,
+    "ft_weeks": 4,
+    "hh_weeks": 0,
+    "ft_required": 2,
+    "score": -6,
+    "hist_series": [
+      -0.0106,
+      -0.0088,
+      -0.0013,
+      -0.0004,
+      -0.004,
+      -0.0041,
+      -0.0067,
+      -0.0087,
+      -0.0102,
+      -0.0107,
+      -0.0145,
+      -0.0189,
+      -0.0262,
+      -0.0329,
+      -0.0363,
+      -0.0323,
+      -0.0278,
+      -0.0213,
+      -0.0135,
+      -0.0072
+    ],
+    "fetched_at": "2026-05-11T17:51:39.041346Z"
   },
   {
     "ticker": "CRH.L",
@@ -7745,7 +7784,7 @@
       43.4514,
       9.9149,
       -23.148,
-      -55.0215,
+      -55.0214,
       -53.0839,
       -57.2475,
       -59.7814,
@@ -7758,16 +7797,16 @@
       -145.0861,
       -637.5187
     ],
-    "fetched_at": "2026-05-11T17:39:46.753622Z"
+    "fetched_at": "2026-05-11T17:51:40.593627Z"
   },
   {
     "ticker": "EMR",
     "name": "EMERSON ELECTRIC",
-    "price": 140.56,
-    "chg_pct": -0.53,
-    "macd": 1.2911,
-    "signal": 1.6839,
-    "histogram": -0.3928,
+    "price": 140.7,
+    "chg_pct": -0.43,
+    "macd": 1.3023,
+    "signal": 1.6861,
+    "histogram": -0.3839,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -7795,18 +7834,18 @@
       -0.561,
       -0.6711,
       -0.476,
-      -0.3928
+      -0.3839
     ],
-    "fetched_at": "2026-05-11T17:39:47.228241Z"
+    "fetched_at": "2026-05-11T17:51:41.089676Z"
   },
   {
     "ticker": "ACM",
     "name": "AECOM",
-    "price": 79.65,
-    "chg_pct": -1.17,
-    "macd": -7.1865,
-    "signal": -6.7393,
-    "histogram": -0.4471,
+    "price": 79.46,
+    "chg_pct": -1.4,
+    "macd": -7.2016,
+    "signal": -6.7424,
+    "histogram": -0.4593,
     "momentum": "Strong Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -7834,9 +7873,9 @@
       -0.7965,
       -0.5261,
       -0.4937,
-      -0.4471
+      -0.4593
     ],
-    "fetched_at": "2026-05-11T17:39:48.050446Z"
+    "fetched_at": "2026-05-11T17:51:42.122851Z"
   },
   {
     "ticker": "EN.PA",
@@ -7875,7 +7914,7 @@
       -0.0808,
       -0.0694
     ],
-    "fetched_at": "2026-05-11T17:39:49.137648Z"
+    "fetched_at": "2026-05-11T17:51:43.248625Z"
   },
   {
     "ticker": "STR.VI",
@@ -7914,7 +7953,7 @@
       -0.3158,
       -0.1547
     ],
-    "fetched_at": "2026-05-11T17:39:49.528716Z"
+    "fetched_at": "2026-05-11T17:51:43.579252Z"
   },
   {
     "ticker": "EOAN.DE",
@@ -7953,7 +7992,7 @@
       -0.0148,
       -0.0815
     ],
-    "fetched_at": "2026-05-11T17:39:50.497058Z"
+    "fetched_at": "2026-05-11T17:51:44.348579Z"
   },
   {
     "ticker": "HEI.DE",
@@ -7992,16 +8031,16 @@
       -1.5847,
       -1.3385
     ],
-    "fetched_at": "2026-05-11T17:39:51.060606Z"
+    "fetched_at": "2026-05-11T17:51:44.890057Z"
   },
   {
     "ticker": "GD",
     "name": "GENERAL DYNAMICS",
-    "price": 343.78,
-    "chg_pct": -0.79,
-    "macd": 2.1304,
-    "signal": 4.4511,
-    "histogram": -2.3206,
+    "price": 343.69,
+    "chg_pct": -0.82,
+    "macd": 2.1233,
+    "signal": 4.4496,
+    "histogram": -2.3264,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -8029,18 +8068,18 @@
       -5.2833,
       -3.9417,
       -2.9027,
-      -2.3206
+      -2.3264
     ],
-    "fetched_at": "2026-05-11T17:39:53.213868Z"
+    "fetched_at": "2026-05-11T17:51:47.144969Z"
   },
   {
     "ticker": "HON",
     "name": "HONEYWELL",
-    "price": 220.44,
+    "price": 220.43,
     "chg_pct": 3.43,
-    "macd": 3.2883,
-    "signal": 5.9256,
-    "histogram": -2.6374,
+    "macd": 3.2875,
+    "signal": 5.9255,
+    "histogram": -2.638,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -8068,9 +8107,9 @@
       -1.3887,
       -2.361,
       -2.8738,
-      -2.6374
+      -2.638
     ],
-    "fetched_at": "2026-05-11T17:39:53.792766Z"
+    "fetched_at": "2026-05-11T17:51:47.938498Z"
   },
   {
     "ticker": "SKF-B.ST",
@@ -8109,7 +8148,7 @@
       -1.2594,
       -0.5312
     ],
-    "fetched_at": "2026-05-11T17:39:54.920005Z"
+    "fetched_at": "2026-05-11T17:51:49.150899Z"
   },
   {
     "ticker": "VOLV-B.ST",
@@ -8148,7 +8187,7 @@
       -0.4654,
       -0.2039
     ],
-    "fetched_at": "2026-05-11T17:39:55.091069Z"
+    "fetched_at": "2026-05-11T17:51:49.335944Z"
   },
   {
     "ticker": "EZJ.L",
@@ -8187,7 +8226,7 @@
       -7.4469,
       -6.0238
     ],
-    "fetched_at": "2026-05-11T17:39:55.798243Z"
+    "fetched_at": "2026-05-11T17:51:50.076700Z"
   },
   {
     "ticker": "2318.HK",
@@ -8226,7 +8265,7 @@
       -1.1127,
       -0.7584
     ],
-    "fetched_at": "2026-05-11T17:39:56.361857Z"
+    "fetched_at": "2026-05-11T17:51:50.955309Z"
   },
   {
     "ticker": "NDA-FI.HE",
@@ -8265,7 +8304,7 @@
       -0.003,
       -0.015
     ],
-    "fetched_at": "2026-05-11T17:39:56.712189Z"
+    "fetched_at": "2026-05-11T17:51:51.365544Z"
   },
   {
     "ticker": "KINV-B.ST",
@@ -8304,7 +8343,7 @@
       -0.7601,
       -0.4152
     ],
-    "fetched_at": "2026-05-11T17:39:58.307045Z"
+    "fetched_at": "2026-05-11T17:51:52.983756Z"
   },
   {
     "ticker": "BOL.ST",
@@ -8343,7 +8382,7 @@
       -20.2299,
       -18.5495
     ],
-    "fetched_at": "2026-05-11T17:39:58.722183Z"
+    "fetched_at": "2026-05-11T17:51:53.350085Z"
   },
   {
     "ticker": "ELO.OL",
@@ -8382,7 +8421,7 @@
       -1.9469,
       -1.5795
     ],
-    "fetched_at": "2026-05-11T17:39:58.884935Z"
+    "fetched_at": "2026-05-11T17:51:53.490136Z"
   },
   {
     "ticker": "ELK.OL",
@@ -8421,7 +8460,7 @@
       -0.2831,
       -0.1686
     ],
-    "fetched_at": "2026-05-11T17:39:59.602396Z"
+    "fetched_at": "2026-05-11T17:51:53.658701Z"
   },
   {
     "ticker": "CARL-B.CO",
@@ -8460,7 +8499,7 @@
       -4.3541,
       -3.4212
     ],
-    "fetched_at": "2026-05-11T17:39:59.937004Z"
+    "fetched_at": "2026-05-11T17:51:54.043026Z"
   },
   {
     "ticker": "NOMD",
@@ -8499,16 +8538,16 @@
       -0.0446,
       -0.0145
     ],
-    "fetched_at": "2026-05-11T17:40:00.090268Z"
+    "fetched_at": "2026-05-11T17:51:54.208219Z"
   },
   {
     "ticker": "TAP",
     "name": "MOLSON COORS",
-    "price": 42.19,
-    "chg_pct": -0.51,
-    "macd": -1.4115,
-    "signal": -1.0282,
-    "histogram": -0.3832,
+    "price": 42.17,
+    "chg_pct": -0.57,
+    "macd": -1.4135,
+    "signal": -1.0286,
+    "histogram": -0.3848,
     "momentum": "Strong Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -8536,18 +8575,18 @@
       -0.4021,
       -0.4395,
       -0.415,
-      -0.3832
+      -0.3848
     ],
-    "fetched_at": "2026-05-11T17:40:00.297481Z"
+    "fetched_at": "2026-05-11T17:51:54.403699Z"
   },
   {
     "ticker": "WALMEX.MX",
     "name": "WAL-MART MEXICO",
-    "price": 57.29,
-    "chg_pct": 0.76,
-    "macd": -0.2588,
-    "signal": -0.1902,
-    "histogram": -0.0686,
+    "price": 57.73,
+    "chg_pct": 1.53,
+    "macd": -0.2237,
+    "signal": -0.1832,
+    "histogram": -0.0405,
     "momentum": "Strong Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -8575,9 +8614,9 @@
       -0.2145,
       -0.2565,
       -0.1641,
-      -0.0686
+      -0.0405
     ],
-    "fetched_at": "2026-05-11T17:40:00.748823Z"
+    "fetched_at": "2026-05-11T17:51:54.739101Z"
   },
   {
     "ticker": "BALD-B.ST",
@@ -8616,7 +8655,7 @@
       -0.72,
       -0.6659
     ],
-    "fetched_at": "2026-05-11T17:40:01.912674Z"
+    "fetched_at": "2026-05-11T17:51:56.309005Z"
   },
   {
     "ticker": "0700.HK",
@@ -8655,16 +8694,16 @@
       -7.8998,
       -7.4113
     ],
-    "fetched_at": "2026-05-11T17:40:07.199171Z"
+    "fetched_at": "2026-05-11T17:52:01.234731Z"
   },
   {
     "ticker": "AREC",
     "name": "AMERICAN RESSOURCES",
-    "price": 2.44,
-    "chg_pct": 9.15,
-    "macd": -0.1219,
-    "signal": -0.0236,
-    "histogram": -0.0983,
+    "price": 2.46,
+    "chg_pct": 9.82,
+    "macd": -0.1207,
+    "signal": -0.0234,
+    "histogram": -0.0973,
     "momentum": "Strong Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -8692,18 +8731,18 @@
       -0.1622,
       -0.1442,
       -0.1281,
-      -0.0983
+      -0.0973
     ],
-    "fetched_at": "2026-05-11T17:40:10.591613Z"
+    "fetched_at": "2026-05-11T17:52:04.716069Z"
   },
   {
     "ticker": "DC-A.TO",
     "name": "Dundee Corporation",
-    "price": 4.34,
-    "chg_pct": -1.14,
-    "macd": 0.1663,
-    "signal": 0.2002,
-    "histogram": -0.0339,
+    "price": 4.36,
+    "chg_pct": -0.68,
+    "macd": 0.1679,
+    "signal": 0.2005,
+    "histogram": -0.0326,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -8731,9 +8770,9 @@
       -0.0326,
       -0.0491,
       -0.0378,
-      -0.0339
+      -0.0326
     ],
-    "fetched_at": "2026-05-11T17:40:11.372814Z"
+    "fetched_at": "2026-05-11T17:52:05.161299Z"
   },
   {
     "ticker": "EUA.L",
@@ -8772,7 +8811,7 @@
       -0.0935,
       -0.0828
     ],
-    "fetched_at": "2026-05-11T17:40:11.507839Z"
+    "fetched_at": "2026-05-11T17:52:05.366674Z"
   },
   {
     "ticker": "IMPUY",
@@ -8811,16 +8850,16 @@
       -0.3642,
       -0.2592
     ],
-    "fetched_at": "2026-05-11T17:40:12.014671Z"
+    "fetched_at": "2026-05-11T17:52:05.855676Z"
   },
   {
     "ticker": "SBSW",
     "name": "Sibanye Stillwater",
     "price": 13.73,
-    "chg_pct": 3.04,
-    "macd": 0.2734,
-    "signal": 0.5936,
-    "histogram": -0.3202,
+    "chg_pct": 3.12,
+    "macd": 0.2742,
+    "signal": 0.5937,
+    "histogram": -0.3195,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -8848,18 +8887,18 @@
       -0.5192,
       -0.522,
       -0.4237,
-      -0.3202
+      -0.3195
     ],
-    "fetched_at": "2026-05-11T17:40:12.486438Z"
+    "fetched_at": "2026-05-11T17:52:06.326687Z"
   },
   {
     "ticker": "UUUU",
     "name": "ENERGY FUELS",
-    "price": 22.35,
-    "chg_pct": 4.54,
-    "macd": 1.4363,
-    "signal": 1.4494,
-    "histogram": -0.0131,
+    "price": 22.49,
+    "chg_pct": 5.19,
+    "macd": 1.4474,
+    "signal": 1.4516,
+    "histogram": -0.0042,
     "momentum": "Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -8887,18 +8926,18 @@
       -0.3549,
       -0.1958,
       -0.1172,
-      -0.0131
+      -0.0042
     ],
-    "fetched_at": "2026-05-11T17:40:13.162812Z"
+    "fetched_at": "2026-05-11T17:52:06.890251Z"
   },
   {
     "ticker": "KWEB",
     "name": "KraneShares CSI China Internet ETF",
-    "price": 29.68,
-    "chg_pct": 0.44,
-    "macd": -1.5043,
-    "signal": -1.4379,
-    "histogram": -0.0664,
+    "price": 29.65,
+    "chg_pct": 0.32,
+    "macd": -1.5071,
+    "signal": -1.4384,
+    "histogram": -0.0686,
     "momentum": "Strong Bearish Crossover",
     "confirmed": true,
     "hh_confirmed": false,
@@ -8926,8 +8965,8 @@
       -0.3749,
       -0.2996,
       -0.1749,
-      -0.0664
+      -0.0686
     ],
-    "fetched_at": "2026-05-11T17:40:13.339323Z"
+    "fetched_at": "2026-05-11T17:52:07.058151Z"
   }
 ]
