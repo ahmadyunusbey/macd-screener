@@ -69,6 +69,7 @@ DEFAULT_TICKERS = {
     "TFPM":         "TRIPLE FLAG PM",
     "WPM":          "WHEATON PRECIOUS",
     # Ebene 3 – SE/CH Compounders
+    "ALC.SW":       "ALCON",
     "ATCO-A.ST":    "ATLAS COPCO",
     "ADDT-B.ST":    "ADDTECH",
     "BAKKA.OL":     "BAKKAFROST",
@@ -109,6 +110,7 @@ DEFAULT_TICKERS = {
     "DGE.L":        "DIAGEO",
     "DOKA.SW":      "DORMAKABA",
     "FXPO.L":       "FERREXPO",
+    "INFX.DE":      "INFINEON",
     "ITM.L":        "ITM POWER",
     "KSPI":         "KASPI",
     "NEL.OL":       "NEL ASA",
@@ -282,6 +284,9 @@ DEFAULT_TICKERS = {
 "UROY": "URANIUM ROYALTY",
 "USAR": "USA RARE EARTH",
 "UUUU": "ENERGY FUELS",
+# China
+    "KWEB": "KraneShares CSI China Internet ETF",
+    "0006.HK": "POWER ASSETS",
 }
 
 
