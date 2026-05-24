@@ -289,6 +289,10 @@ DEFAULT_TICKERS = {
 # China
     "KWEB": "KraneShares CSI China Internet ETF",
     "0006.HK": "POWER ASSETS",
+# SPACE
+    "BKSY": "BLACKSKY",
+    "VELO": "VELO3D",
+    "RKLB": "ROCKET LAB",
 }
 
 
