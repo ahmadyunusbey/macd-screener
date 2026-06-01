@@ -35,7 +35,9 @@ DEFAULT_TICKERS = {
     # Ebene 1 – Core / Income
     "ASHM.L":       "ASHMORE GROUP",
     "AV.L":         "AVIVA",
+    "BA.L":         "BAE SYSTEMS",
     "BATS.L":       "BRITISH AMERICAN TOBACCO",
+    "CSN.L":        "CHESNARA",
     "DNLM.L":       "DUNELM GROUP",
     "ENOG.L":       "ENERGEAN",
     "FLNG":         "FLEX LNG",
