@@ -295,6 +295,7 @@ DEFAULT_TICKERS = {
     "BKSY": "BLACKSKY",
     "VELO": "VELO3D",
     "RKLB": "ROCKET LAB",
+    "FTC.L":"FILTRONIC",
 }
 
 
